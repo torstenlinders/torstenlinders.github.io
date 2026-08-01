@@ -1,4 +1,4 @@
-baseURL = 'https://example.org'
+baseURL = "https://kompass2.se/"
 languageCode = 'en-us'
 title = 'Kompass 26'
 theme = 'ananke'
