@@ -47,7 +47,7 @@ other = "Visa mitt resultat"
 other = "Ditt resultat"
 
 [test_question]
-other = "Fråga"
+other = "Påstående"
 
 [test_progress_of]
 other = "av"

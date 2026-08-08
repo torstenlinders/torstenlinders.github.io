@@ -47,7 +47,7 @@ other = "Show my result"
 other = "Your result"
 
 [test_question]
-other = "Question"
+other = "Statement"
 
 [test_progress_of]
 other = "of"
