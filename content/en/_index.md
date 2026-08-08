@@ -12,6 +12,6 @@ Kompass was started in August (!) 2026 by oceanographer, Home Guard soldier, and
 
 Here you can:
 
-- explore our political starting points
-- learn how to vote for Kompass
-- find out how to get involved
+- explore our political [starting points](/politik.md)
+- learn how to [vote for Kompass](/rosta.md)
+- find out how to [get involved](/engagera.md)

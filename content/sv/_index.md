@@ -12,6 +12,6 @@ Kompass startades i augusti (!) 2026 av oceanografen, hemvärnssoldaten och treb
 
 Här kan du:
 
-- ta del av vår politiska utgångspunkter
-- läsa hur du kan rösta på Kompass
-- få information om hur du kan engagera dig
+- ta del av vår politiska [utgångspunkter](/rosta.md)
+- läsa hur du kan [rösta på Kompass](/rosta.md)
+- få information om hur du kan [engagera dig](/engagera.md)

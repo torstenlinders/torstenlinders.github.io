@@ -5,7 +5,7 @@ draft: false
 description: "Find out how you can contribute to Kompass."
 ---
 
-Kompass is a new political initiative. We are looking for people who would like to contribute ideas, knowledge and practical work.
+Kompass is a new political initiative. We are looking for people who would like to contribute with ideas, knowledge and practical work.
 
 For example, you could help with:
 

@@ -10,7 +10,7 @@ questions:
   - text: "Jag vill lyssna och hitta vägar framåt tillsammans med andra."
     weight: 1
 
-  - text: "Jag och alla som bor och arbetar här vi bygger Sverige varje dag."
+  - text: "Sverige byggs varje dag, av oss som bor här."
     weight: 1
 
   - text: "Jag vill drömma fritt och få några drömmar uppfyllda."

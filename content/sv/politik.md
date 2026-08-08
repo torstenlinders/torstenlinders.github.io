@@ -4,7 +4,7 @@ slug: "utgangspunkter"
 draft: false
 ---
 
-**Kompass politik utgår från att Sverige byggs varje dag av oss som bor och arbetar här. Byggstenarna är drömmar och arbete. Vi bygger tillsammans.**
+**Kompass utgår från att Sverige byggs varje dag av oss som bor här. Byggstenarna är drömmar och arbete. Vi bygger tillsammans.**
 
 ## Tillväxt, arbete och skatt
 

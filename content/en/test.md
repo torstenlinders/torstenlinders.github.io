@@ -7,10 +7,10 @@ questions:
   - text: "I am an optimist."
     weight: 1
 
-  - text: "I want to listen and forge paths forward together with others."
+  - text: "I want to listen and find paths forward together with others."
     weight: 1
 
-  - text: "I and everyone living and working here, we build Sweden every day."
+  - text: "Sweden is built every day, by us who live here."
     weight: 1
 
   - text: "I want to dream freely and see some of those dreams come true."
