@@ -1,0 +1,59 @@
+[read_more]
+other = "Read more"
+
+[optimistic_conversation]
+other = "For an optimistic conversation."
+
+[listen-more]
+other = "We listen more than we speak."
+
+[main_menu]
+other = "Main menu"
+
+[language_selection]
+other = "Language selection"
+
+[menu_open]
+other = "Menu"
+
+[read_politics]
+other = "Starting points"
+
+[how_to_vote]
+other = "How to vote"
+
+[take_test]
+other = "Is Kompass for you?"
+
+[test_strongly_agree]
+other = "Strongly agree"
+
+[test_agree]
+other = "Somewhat agree"
+
+[test_neutral]
+other = "Neither agree nor disagree"
+
+[test_disagree]
+other = "Somewhat disagree"
+
+[test_strongly_disagree]
+other = "Strongly disagree"
+
+[test_show_result]
+other = "Show my result"
+
+[test_result_heading]
+other = "Your result"
+
+[test_question]
+other = "Question"
+
+[test_progress_of]
+other = "of"
+
+[test_back]
+other = "Previous"
+
+[test_next]
+other = "Next question"

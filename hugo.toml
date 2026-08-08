@@ -1,4 +1,79 @@
-baseURL = 'https://example.org'
-languageCode = 'en-us'
-title = 'Kompass 26'
-theme = 'ananke'
+baseURL = 'https://kompass26.se/'
+title = 'Kompass'
+defaultContentLanguage = 'sv'
+defaultContentLanguageInSubdir = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[languages]
+
+  [languages.sv]
+    locale = 'sv-SE'
+    label = 'Svenska'
+    contentDir = 'content/sv'
+    title = 'Kompass'
+    weight = 1
+
+    [languages.sv.menus]
+
+      [[languages.sv.menus.main]]
+        name = 'Varför Kompass?'
+        pageRef = '/varfor'
+        weight = 10
+
+      [[languages.sv.menus.main]]
+        name = 'Utgångspunkter'
+        pageRef = '/politik'
+        weight = 20
+
+      [[languages.sv.menus.main]]
+        name = 'Rösta'
+        pageRef = '/rosta'
+        weight = 30
+
+      [[languages.sv.menus.main]]
+        name = 'Engagera dig'
+        pageRef = '/engagera'
+        weight = 40
+
+      [[languages.sv.menus.main]]
+        name = 'Kontakt'
+        pageRef = '/kontakt'
+        weight = 50
+
+  [languages.en]
+    locale = 'en-GB'
+    label = 'English'
+    contentDir = 'content/en'
+    title = 'Kompass'
+    weight = 2
+
+    [languages.en.menus]
+
+      [[languages.en.menus.main]]
+        name = 'Why Kompass?'
+        pageRef = '/varfor'
+        weight = 10
+
+      [[languages.en.menus.main]]
+        name = "Starting points"
+        pageRef = '/politik'
+        weight = 20
+
+      [[languages.en.menus.main]]
+        name = 'How to vote'
+        pageRef = '/rosta'
+        weight = 30
+
+      [[languages.en.menus.main]]
+        name = 'Get involved'
+        pageRef = '/engagera'
+        weight = 40
+
+      [[languages.en.menus.main]]
+        name = 'Contact'
+        pageRef = '/kontakt'
+        weight = 50

@@ -1,0 +1,51 @@
+<header class="site-header">
+  <div class="header-inner">
+
+    <div class="header-main">
+      <a class="site-brand" href="{{ site.Home.RelPermalink }}">
+        <span class="brand-mark">
+          <img
+            src="/images/kompass-symbol.svg"
+            alt=""
+            width="44"
+            height="44">
+        </span>
+
+        <span>Kompass</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-menu">
+        <span class="visually-hidden">{{ i18n "menu_open" }}</span>
+        ☰
+      </button>
+
+      <nav id="main-menu" class="main-nav" aria-label="{{ i18n "main_menu" }}">
+        {{ range site.Menus.main }}
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      </nav>
+    </div>
+
+    <div class="header-message">
+      <nav class="language-switcher" aria-label="{{ i18n "language_selection" }}">
+        {{ range .AllTranslations }}
+          <a
+            href="{{ .RelPermalink }}"
+            lang="{{ .Language.Lang }}"
+            hreflang="{{ .Language.Lang }}"
+            {{ if eq .Language.Lang $.Language.Lang }}
+              class="active"
+              aria-current="page"
+            {{ end }}>
+            {{ .Language.Label }}
+          </a>
+        {{ end }}
+      </nav>
+    </div>
+
+  </div>
+</header>

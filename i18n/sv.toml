@@ -1,0 +1,59 @@
+[read_more]
+other = "Läs mer"
+
+[optimistic_conversation]
+other = "För ett optimistiskt samtal."
+
+[listen-more]
+other = "Vi lyssnar mer än vi talar."
+
+[main_menu]
+other = "Huvudmeny"
+
+[language_selection]
+other = "Språkval"
+
+[menu_open]
+other = "Meny"
+
+[read_politics]
+other = "Utgångspunkter"
+
+[how_to_vote]
+other = "Så röstar du"
+
+[take_test]
+other = "Är Kompass för dig?"
+
+[test_strongly_agree]
+other = "Instämmer helt"
+
+[test_agree]
+other = "Instämmer delvis"
+
+[test_neutral]
+other = "Varken eller"
+
+[test_disagree]
+other = "Instämmer inte särskilt"
+
+[test_strongly_disagree]
+other = "Instämmer inte alls"
+
+[test_show_result]
+other = "Visa mitt resultat"
+
+[test_result_heading]
+other = "Ditt resultat"
+
+[test_question]
+other = "Fråga"
+
+[test_progress_of]
+other = "av"
+
+[test_back]
+other = "Föregående"
+
+[test_next]
+other = "Nästa fråga"

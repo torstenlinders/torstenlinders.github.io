@@ -1,0 +1,89 @@
+{{ define "main" }}
+<article class="content-page test-page">
+  <h1>{{ .Title }}</h1>
+
+  <div class="page-content">
+    {{ .Content }}
+  </div>
+
+  <form id="kompass-test">
+        <p class="test-progress" aria-live="polite">
+            {{ i18n "test_question" }}
+            <span id="test-progress-current">1</span>
+            {{ i18n "test_progress_of" }}
+            <span id="test-progress-total">{{ len .Params.questions }}</span>
+        </p>
+
+        {{ range $index, $question := .Params.questions }}
+            <fieldset
+            class="test-question"
+            data-weight="{{ $question.weight | default 1 }}"
+            {{ if ne $index 0 }}hidden{{ end }}>
+
+            <legend>
+                {{ $question.text }}
+            </legend>
+
+            <label>
+                <input type="radio" name="q{{ $index }}" value="2" required>
+                {{ i18n "test_strongly_agree" }}
+            </label>
+
+            <label>
+                <input type="radio" name="q{{ $index }}" value="1">
+                {{ i18n "test_agree" }}
+            </label>
+
+            <label>
+                <input type="radio" name="q{{ $index }}" value="0">
+                {{ i18n "test_neutral" }}
+            </label>
+
+            <label>
+                <input type="radio" name="q{{ $index }}" value="-1">
+                {{ i18n "test_disagree" }}
+            </label>
+
+            <label>
+                <input type="radio" name="q{{ $index }}" value="-2">
+                {{ i18n "test_strongly_disagree" }}
+            </label>
+            </fieldset>
+        {{ end }}
+
+        <div class="test-navigation">
+            <button
+                id="test-back"
+                class="button"
+                type="button"
+                hidden>
+                {{ i18n "test_back" }}
+            </button>
+
+            <button
+                id="test-next"
+                class="button button-primary"
+                type="button"
+                disabled>
+                {{ i18n "test_next" }}
+            </button>
+
+            <button
+                id="test-submit"
+                class="button button-primary"
+                type="submit"
+                disabled
+                hidden>
+                {{ i18n "test_show_result" }}
+            </button>
+        </div>
+    </form>
+
+  <section id="test-result" hidden aria-live="polite">
+    <h2>{{ i18n "test_result_heading" }}</h2>
+    <p id="test-result-text"></p>
+  </section>
+</article>
+
+<script src="/js/kompass-test.js"></script>
+{{ end }}
