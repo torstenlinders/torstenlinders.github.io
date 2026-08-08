@@ -14,7 +14,7 @@ Du kan exempelvis hjälpa till med:
 - kontakter och opinionsbildning
 - praktiskt arbete inför valet
 
-Du behöver inte ha tidigare erfarenhet av partipolitik. Det viktiga är att du delar ambitionen att bidra till ett öppet, fritt och gemensamt Sverige.
+Du behöver inte ha tidigare erfarenhet av partipolitik. Det viktiga är att du delar ambitionen att bidra till ett mer optimistiskt politiskt samtal i Sverige.
 
 ## Anmäl ditt intresse
 
