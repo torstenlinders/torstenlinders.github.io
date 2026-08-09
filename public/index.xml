@@ -10,7 +10,16 @@
 		
 		
 		
+			<lastBuildDate>Sun, 02 Aug 2026 14:40:00 +0200</lastBuildDate>
+		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Om</title>
+				<link>http://localhost:1313/om/</link>
+				<pubDate>Sun, 02 Aug 2026 14:40:00 +0200</pubDate>
+				<guid>http://localhost:1313/om/</guid>
+				<description>&lt;h1 id=&#34;om-kompass-26&#34;&gt;Om Kompass 26&lt;/h1&gt;&#xA;&lt;p&gt;Välkommen till min webbplats.&lt;/p&gt;&#xA;&lt;p&gt;Här kommer jag att samla tankar, artiklar och projekt.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Engagera dig</title>
 				<link>http://localhost:1313/engagera/</link>

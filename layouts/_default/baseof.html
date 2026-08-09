@@ -23,6 +23,21 @@
       href="{{ $css.RelPermalink }}"
       integrity="{{ $css.Data.Integrity }}">
   {{ end }}
+
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  {{ range .AllTranslations }}
+    <link
+      rel="alternate"
+      hreflang="{{ .Language.Lang }}"
+      href="{{ .Permalink }}">
+  {{ end }}
+
+  <link
+    rel="alternate"
+    hreflang="x-default"
+    href="{{ site.Home.Permalink }}">
+    
 </head>
 
 
