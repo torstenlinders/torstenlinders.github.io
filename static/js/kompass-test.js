@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentText = document.querySelector("#test-progress-current");
   const backButton = document.querySelector("#test-back");
   const nextButton = document.querySelector("#test-next");
+  const politikButton = document.querySelector("#result-politik");
+  const rostaButton = document.querySelector("#result-rosta");
+  const engageraButton = document.querySelector("#result-engagera");
 
   if (
       !form ||
@@ -104,24 +107,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const normalisedScore = score / maximum;
 
-    const messages = {
-      sv: {
-        strong: "Du verkar dela många av Kompass utgångspunkter.",
-        some: "Du delar flera av Kompass tankar, men inte alla.",
-        limited:
-          "Kompass är kanske inte ditt självklara parti, men vi hoppas att samtalet ändå kan vara värdefullt."
-      },
-      en: {
-        strong: "You appear to share many of Kompass's starting points.",
-        some: "You share several of Kompass's ideas, although not all of them.",
-        limited:
-          "Kompass may not be your obvious choice, but we hope the conversation can still be worthwhile."
-      }
-    };
-
     let resultLevel;
 
-    if (normalisedScore >= 0.4) {
+    if (normalisedScore >= 0.8) {
       resultLevel = "strong";
     } else if (normalisedScore >= 0.0) {
       resultLevel = "some";
@@ -131,18 +119,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let message;
 
-    if (resultLevel === "strong") {
-    message = window.kompassI18n.strong;
-    } else if (resultLevel === "some") {
-    message = window.kompassI18n.some;
-    } else {
-    message = window.kompassI18n.limited;
-    }
+    message = window.kompassI18n[resultLevel];
 
     resultText.textContent = message;
 
     form.hidden = true;
+
     resultBox.hidden = false;
+
+    if (politikButton) politikButton.hidden = true;
+    if (rostaButton) rostaButton.hidden = true;
+    if (engageraButton) engageraButton.hidden = true;
+
+    if (resultLevel === "strong") {
+    if (politikButton) politikButton.hidden = false;
+    if (rostaButton) rostaButton.hidden = false;
+    if (engageraButton) engageraButton.hidden = false;
+    } else if (resultLevel === "some") {
+    if (politikButton) politikButton.hidden = false;
+    } else {
+    }
 
     resultBox.scrollIntoView({
       behavior: "smooth",

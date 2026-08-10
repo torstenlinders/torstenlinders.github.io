@@ -16,11 +16,17 @@ other = "Språkval"
 [menu_open]
 other = "Meny"
 
+[why_kompass]
+other = "Varför Kompass?"
+
 [read_politics]
 other = "Utgångspunkter"
 
 [how_to_vote]
 other = "Så röstar du"
+
+[get_involved]
+other = "Engagera dig"
 
 [take_test]
 other = "Är Kompass för dig?"
@@ -59,10 +65,10 @@ other = "Visa resultat"
 other = "Klart"
 
 [test_result_heading]
-other = "Ditt resultat"
+other = "Det verkar som att:"
 
 [test_result_strong]
-other = "Du verkar dela många av Kompass utgångspunkter."
+other = "Du delar många av Kompass utgångspunkter. Du kanske vill rösta på Kompass? Du kanske vill engagera dig?"
 
 [test_result_some]
 other = "Du delar flera av Kompass utgångspunkter, men inte alla."

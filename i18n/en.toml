@@ -16,11 +16,17 @@ other = "Language selection"
 [menu_open]
 other = "Menu"
 
+[why_kompass]
+other = "Why Kompass?"
+
 [read_politics]
 other = "Starting points"
 
 [how_to_vote]
 other = "How to vote"
+
+[get_involved]
+other = "Get involved"
 
 [take_test]
 other = "Is Kompass for you?"
@@ -59,13 +65,13 @@ other = "Show result"
 other = "Finished"
 
 [test_result_heading]
-other = "Your result"
+other = "It seems that:"
 
 [test_result_strong]
-other = "You appear to share many of Kompass's starting points."
+other = "You share many of Kompass's starting points."
 
 [test_result_some]
-other = "You share several of Kompass's ideas, although not all of them."
+other = "You share several of Kompass's starting points, although not all of them."
 
 [test_result_limited]
 other = "Kompass may not be your obvious choice, but we hope the conversation can still be worthwhile."
