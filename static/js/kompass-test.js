@@ -5,19 +5,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentText = document.querySelector("#test-progress-current");
   const backButton = document.querySelector("#test-back");
   const nextButton = document.querySelector("#test-next");
-  const submitButton = document.querySelector("#test-submit");
 
   if (
-    !form ||
-    !resultBox ||
-    !resultText ||
-    !currentText ||
-    !backButton ||
-    !nextButton ||
-    !submitButton
-  ) {
-    return;
-  }
+      !form ||
+      !resultBox ||
+      !resultText ||
+      !currentText ||
+      !backButton ||
+      !nextButton 
+    ) {
+        return;
+      }
 
   const questions = [...form.querySelectorAll(".test-question")];
   let currentIndex = 0;
@@ -29,6 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function allQuestionsAnswered() {
     return questions.every(hasAnswer);
   }
+
+  const language =
+    document.documentElement.lang?.toLowerCase().startsWith("en")
+      ? "en"
+      : "sv";
 
   function showQuestion(index) {
     questions.forEach((question, questionIndex) => {
@@ -42,11 +45,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const isLastQuestion = index === questions.length - 1;
 
-    nextButton.hidden = isLastQuestion;
-    nextButton.disabled = !hasAnswer(questions[index]);
+    nextButton.hidden = false;
 
-    submitButton.hidden = !isLastQuestion;
-    submitButton.disabled = !allQuestionsAnswered();
+    if (isLastQuestion) {
+        nextButton.textContent = window.kompassI18n.result;
+    } else {
+        nextButton.textContent = window.kompassI18n.next;
+    }
+
+    nextButton.disabled = !hasAnswer(questions[index]);
 
     questions[index].scrollIntoView({
       behavior: "smooth",
@@ -54,24 +61,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  questions.forEach((question) => {
+    questions.forEach((question) => {
     question.addEventListener("change", () => {
-      if (currentIndex === questions.length - 1) {
-        submitButton.disabled = !allQuestionsAnswered();
-      } else {
         nextButton.disabled = !hasAnswer(questions[currentIndex]);
-      }
     });
-  });
+    });
 
-  nextButton.addEventListener("click", () => {
-    if (
-      currentIndex < questions.length - 1 &&
-      hasAnswer(questions[currentIndex])
-    ) {
-      showQuestion(currentIndex + 1);
-    }
-  });
+    nextButton.addEventListener("click", () => {
+        if (!hasAnswer(questions[currentIndex])) {
+            return;
+        }
+        if (currentIndex === questions.length - 1) {
+            form.requestSubmit();
+            return;
+        }
+        showQuestion(currentIndex + 1);
+    });
 
   backButton.addEventListener("click", () => {
     if (currentIndex > 0) {
@@ -99,11 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const normalisedScore = score / maximum;
 
-    const language =
-      document.documentElement.lang?.toLowerCase().startsWith("en")
-        ? "en"
-        : "sv";
-
     const messages = {
       sv: {
         strong: "Du verkar dela många av Kompass utgångspunkter.",
@@ -129,14 +129,26 @@ document.addEventListener("DOMContentLoaded", () => {
       resultLevel = "limited";
     }
 
+    let message;
+
+    if (resultLevel === "strong") {
+    message = window.kompassI18n.strong;
+    } else if (resultLevel === "some") {
+    message = window.kompassI18n.some;
+    } else {
+    message = window.kompassI18n.limited;
+    }
+
+    resultText.textContent = message;
+
     form.hidden = true;
-    resultText.textContent = messages[language][resultLevel];
     resultBox.hidden = false;
 
     resultBox.scrollIntoView({
       behavior: "smooth",
       block: "start"
     });
+
   });
 
   showQuestion(0);

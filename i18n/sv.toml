@@ -40,12 +40,6 @@ other = "Instämmer inte särskilt"
 [test_strongly_disagree]
 other = "Instämmer inte alls"
 
-[test_show_result]
-other = "Visa mitt resultat"
-
-[test_result_heading]
-other = "Ditt resultat"
-
 [test_question]
 other = "Påstående"
 
@@ -56,4 +50,22 @@ other = "av"
 other = "Föregående"
 
 [test_next]
-other = "Nästa fråga"
+other = "Nästa"
+
+[test_show_result]
+other = "Visa resultat"
+
+[test_finished]
+other = "Klart"
+
+[test_result_heading]
+other = "Ditt resultat"
+
+[test_result_strong]
+other = "Du verkar dela många av Kompass utgångspunkter."
+
+[test_result_some]
+other = "Du delar flera av Kompass utgångspunkter, men inte alla."
+
+[test_result_limited]
+other = "Kompass är kanske inte ditt självklara val, men vi hoppas att samtalet ändå kan vara värdefullt."

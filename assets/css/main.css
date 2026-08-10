@@ -368,6 +368,31 @@ a:focus {
   margin-top: 0;
 }
 
+#test-finished {
+  color: var(--kompass-red);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.test-result-box {
+  margin: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-top: 5px solid var(--kompass-red);
+}
+
+.test-result-box h2 {
+  margin-top: 0;
+  color: var(--kompass-blue);
+  font-size: 1.25rem;
+}
+
+.test-result-box p {
+  margin-bottom: 0;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
 .site-footer {
     display: grid;
     grid-template-columns: 65% 35%;

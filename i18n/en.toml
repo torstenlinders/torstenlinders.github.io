@@ -40,12 +40,6 @@ other = "Somewhat disagree"
 [test_strongly_disagree]
 other = "Strongly disagree"
 
-[test_show_result]
-other = "Show my result"
-
-[test_result_heading]
-other = "Your result"
-
 [test_question]
 other = "Statement"
 
@@ -56,4 +50,22 @@ other = "of"
 other = "Previous"
 
 [test_next]
-other = "Next question"
+other = "Next"
+
+[test_show_result]
+other = "Show result"
+
+[test_finished]
+other = "Finished"
+
+[test_result_heading]
+other = "Your result"
+
+[test_result_strong]
+other = "You appear to share many of Kompass's starting points."
+
+[test_result_some]
+other = "You share several of Kompass's ideas, although not all of them."
+
+[test_result_limited]
+other = "Kompass may not be your obvious choice, but we hope the conversation can still be worthwhile."

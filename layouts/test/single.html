@@ -67,23 +67,34 @@
                 disabled>
                 {{ i18n "test_next" }}
             </button>
-
-            <button
-                id="test-submit"
-                class="button button-primary"
-                type="submit"
-                disabled
-                hidden>
-                {{ i18n "test_show_result" }}
-            </button>
         </div>
     </form>
 
-  <section id="test-result" hidden aria-live="polite">
-    <h2>{{ i18n "test_result_heading" }}</h2>
-    <p id="test-result-text"></p>
-  </section>
+    <section id="test-result" hidden>
+        <p class="test-progress">
+            <span id="test-finished">
+                {{ i18n "test_finished" }}
+            </span>
+        </p>
+        <div class="test-result-box">
+            <h2>{{ i18n "test_result_heading" }}</h2>
+            <p id="test-result-text"></p>
+        </div>
+
+    </section>
 </article>
+
+<script id="kompass-i18n">
+    window.kompassI18n = {
+        next: '{{ i18n "test_next" }}',
+        result: '{{ i18n "test_show_result" }}',
+        finished: '{{ i18n "test_finished" }}',
+        resultHeading: '{{ i18n "test_result_heading" }}',
+        strong: '{{ i18n "test_result_strong" }}',
+        some: '{{ i18n "test_result_some" }}',
+        limited: '{{ i18n "test_result_limited" }}'
+    };
+</script>
 
 <script src="/js/kompass-test.js"></script>
 {{ end }}
