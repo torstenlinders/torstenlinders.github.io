@@ -18,7 +18,8 @@ Raising taxes cannot solve every new challenge.
 
 Our shared challenges are growing in healthcare, education, infrastructure and security. The room for tax cuts is limited.
 
-Taxes should be easy to understand, hard to avoid, and cause minimal economic distortion. This speaks for taxing consumption and property. Income must also be taxed, and inheritance is a form of income. There should be few tax rates and exemptions.
+Taxes should be easy to understand, hard to avoid, and cause minimal economic distortion. There should be few tax rates and exemptions.
+
 ## Planning and security
 
 The future will always surprise us. That is why initiative, unity, and resolve matter more than elaborate plans.

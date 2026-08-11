@@ -62,7 +62,7 @@ other = "Nästa"
 other = "Visa resultat"
 
 [test_finished]
-other = "Klart"
+other = "Kompass-testet klart"
 
 [test_result_heading]
 other = "Det verkar som att:"

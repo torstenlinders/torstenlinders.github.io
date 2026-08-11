@@ -62,13 +62,13 @@ other = "Next"
 other = "Show result"
 
 [test_finished]
-other = "Finished"
+other = "Kompass test completed"
 
 [test_result_heading]
 other = "It seems that:"
 
 [test_result_strong]
-other = "You share many of Kompass's starting points."
+other = "You share many of Kompass's starting points. Maybe you want to vote for Kompass? Maybe you want to get involved?"
 
 [test_result_some]
 other = "You share several of Kompass's starting points, although not all of them."

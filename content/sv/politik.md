@@ -18,7 +18,7 @@ Varje nytt behov kan inte mötas med skattehöjningar.
 
 Våra gemensamma utmaningar ökar, inom vård, utbildning, infrastruktur och säkerhet. Utrymmet för skattesäkningar är litet. 
 
-Skatter ska vara begripliga, svåra att smita från och hämma ekonomin så lite som möjligt. Detta talar för skatt på konsumtion och fastigheter. Inkomst ska också beskattas, och arv är en form av inkomst. Skattesatserna och undantagen ska vara få. 
+Skatter ska vara begripliga, svåra att smita från och hämma ekonomin så lite som möjligt. Skattesatserna och undantagen ska vara få. 
 
 ## Planer och säkerhet
 
@@ -26,7 +26,7 @@ Framtiden kommer alltid att överraska oss. Därför är initiativ, sammanhålln
 
 Vi bygger Sveriges säkerhet tillsammans med våra vänner, i EU och i NATO. 
 
-Från finanskrisen 2008 och pandemin till Rysslands aggressioner, Trumps hot mot Grönland och NATO, och den snabba utvecklingen av AI - detta är utmaningar vi måste möta tillsammans med våra vänner och allierade. 
+Från finanskrisen 2008 och pandemin till Rysslands aggressioner, Trumps hot mot Grönland och NATO, och den snabba utvecklingen av AI — detta är utmaningar vi måste möta tillsammans med våra vänner och allierade. 
 
 ## Europa och invandring
 

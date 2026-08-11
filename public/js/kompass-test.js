@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let resultLevel;
 
-    if (normalisedScore >= 0.8) {
+    if (normalisedScore >= 0.9) {
       resultLevel = "strong";
     } else if (normalisedScore >= 0.0) {
       resultLevel = "some";
