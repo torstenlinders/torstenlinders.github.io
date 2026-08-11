@@ -2,126 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/en/</loc>
-    <lastmod>2026-08-02T14:40:00+02:00</lastmod>
+    <loc>https://kompass26.se/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SE"
-                href="http://localhost:1313/"
+                href="https://kompass26.se/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-GB"
-                href="http://localhost:1313/en/"
+                href="https://kompass26.se/en/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/om/</loc>
-    <lastmod>2026-08-02T14:40:00+02:00</lastmod>
+    <loc>https://kompass26.se/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SE"
-                href="http://localhost:1313/om/"
+                href="https://kompass26.se/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-GB"
-                href="http://localhost:1313/en/om/"
+                href="https://kompass26.se/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/</loc>
+    <loc>https://kompass26.se/en/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SE"
-                href="http://localhost:1313/categories/"
+                href="https://kompass26.se/kontakt/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-GB"
-                href="http://localhost:1313/en/categories/"
+                href="https://kompass26.se/en/contact/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/contact/</loc>
+    <loc>https://kompass26.se/en/involved/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SE"
-                href="http://localhost:1313/kontakt/"
+                href="https://kompass26.se/engagera/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-GB"
-                href="http://localhost:1313/en/contact/"
+                href="https://kompass26.se/en/involved/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/involved/</loc>
+    <loc>https://kompass26.se/en/vote/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SE"
-                href="http://localhost:1313/engagera/"
+                href="https://kompass26.se/rosta/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-GB"
-                href="http://localhost:1313/en/involved/"
+                href="https://kompass26.se/en/vote/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/vote/</loc>
+    <loc>https://kompass26.se/en/test/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SE"
-                href="http://localhost:1313/rosta/"
+                href="https://kompass26.se/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-GB"
-                href="http://localhost:1313/en/vote/"
+                href="https://kompass26.se/en/test/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/test/</loc>
+    <loc>https://kompass26.se/en/starting/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SE"
-                href="http://localhost:1313/test/"
+                href="https://kompass26.se/utgangspunkter/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-GB"
-                href="http://localhost:1313/en/test/"
+                href="https://kompass26.se/en/starting/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/starting/</loc>
+    <loc>https://kompass26.se/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SE"
-                href="http://localhost:1313/utgangspunkter/"
+                href="https://kompass26.se/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-GB"
-                href="http://localhost:1313/en/starting/"
+                href="https://kompass26.se/en/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/</loc>
+    <loc>https://kompass26.se/en/why/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SE"
-                href="http://localhost:1313/tags/"
+                href="https://kompass26.se/varfor/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-GB"
-                href="http://localhost:1313/en/tags/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/why/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="sv-SE"
-                href="http://localhost:1313/varfor/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-GB"
-                href="http://localhost:1313/en/why/"
+                href="https://kompass26.se/en/why/"
                 />
   </url>
 </urlset>
