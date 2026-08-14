@@ -25,9 +25,7 @@ Your voting card will show which elections you are entitled to vote in.
 
 ## How to vote for Kompass
 
-Kompass has submitted its notification of participation in the 2026 elections (Riksdag, regional and municipal assemblies) to the Swedish Election Authority.
-
-Once the notification has been approved, votes cast for Kompass in the elections covered by the notification will be valid.
+Kompass has submitted its notification of participation in the 2026 elections (Riksdag, regional and municipal assemblies) to the Swedish Election Authority, who has accepted the notification. This means that votes cast for Kompass in the elections covered by the notification will be valid.
 
 Ballot papers with the party name **Kompass** may be available in some voting locations. If no Kompass ballot paper is available, take a blank ballot paper for the relevant election and clearly write the full party name:
 

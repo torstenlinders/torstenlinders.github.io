@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>An optimistic policy for Sweden on Kompass</title>
-		<link>https://kompass26.se/en/</link>
+		<link>http://localhost:1313/en/</link>
 		<description>Recent content in An optimistic policy for Sweden on Kompass</description>
 		<generator>Hugo</generator>
 		<language>en-GB</language>
@@ -10,47 +10,56 @@
 		
 		
 		
-			<atom:link href="https://kompass26.se/en/index.xml" rel="self" type="application/rss+xml" />
+			<lastBuildDate>Sun, 02 Aug 2026 14:40:00 +0200</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Om</title>
+				<link>http://localhost:1313/en/om/</link>
+				<pubDate>Sun, 02 Aug 2026 14:40:00 +0200</pubDate>
+				<guid>http://localhost:1313/en/om/</guid>
+				<description>&lt;h1 id=&#34;om-kompass-26&#34;&gt;Om Kompass 26&lt;/h1&gt;&#xA;&lt;p&gt;Välkommen till min webbplats.&lt;/p&gt;&#xA;&lt;p&gt;Här kommer jag att samla tankar, artiklar och projekt.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Contact</title>
-				<link>https://kompass26.se/en/contact/</link>
+				<link>http://localhost:1313/en/contact/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://kompass26.se/en/contact/</guid>
+				<guid>http://localhost:1313/en/contact/</guid>
 				<description>&lt;p&gt;Do you have questions, comments, or would you like to get in touch with Kompass?&lt;/p&gt;&#xA;&lt;h2 id=&#34;email&#34;&gt;Email&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;mailto:kontakt@kompass26.se&#34;&gt;kontakt@kompass26.se&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;press-and-media&#34;&gt;Press and media&lt;/h2&gt;&#xA;&lt;p&gt;Journalists and other media representatives are welcome to contact us by email. Please include &lt;strong&gt;Press&lt;/strong&gt; in the subject line.&lt;/p&gt;&#xA;&lt;h2 id=&#34;website-contact&#34;&gt;Website contact&lt;/h2&gt;&#xA;&lt;p&gt;Torsten Linders&lt;br&gt;&#xA;Founder of Kompass&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Get involved</title>
-				<link>https://kompass26.se/en/involved/</link>
+				<link>http://localhost:1313/en/involved/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://kompass26.se/en/involved/</guid>
+				<guid>http://localhost:1313/en/involved/</guid>
 				<description>&lt;p&gt;Kompass is a new political initiative. We are looking for people who would like to contribute with ideas, knowledge and practical work.&lt;/p&gt;&#xA;&lt;p&gt;For example, you could help with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;political ideas and fact-checking&lt;/li&gt;&#xA;&lt;li&gt;writing and communication&lt;/li&gt;&#xA;&lt;li&gt;organisation and administration&lt;/li&gt;&#xA;&lt;li&gt;public outreach&lt;/li&gt;&#xA;&lt;li&gt;practical work during the election campaign&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You do not need previous experience in politics. What matters is that you share our ambition to contribute to a more optimistic political conversation in Sweden.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>How to vote</title>
-				<link>https://kompass26.se/en/vote/</link>
+				<link>http://localhost:1313/en/vote/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://kompass26.se/en/vote/</guid>
+				<guid>http://localhost:1313/en/vote/</guid>
 				<description>&lt;p&gt;Elections to the Riksdag, the regional assemblies and the municipal assemblies will take place on &lt;strong&gt;13 September 2026&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;For complete and official information about voting, visit the &lt;a href=&#34;https://www.val.se/english&#34;&gt;Swedish Election Authority&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;who-has-the-right-to-vote&#34;&gt;Who has the right to vote?&lt;/h2&gt;&#xA;&lt;p&gt;You have the right to vote in the election to the Riksdag if you:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;are at least 18 years old on election day&lt;/li&gt;&#xA;&lt;li&gt;are a Swedish citizen&lt;/li&gt;&#xA;&lt;li&gt;are or have previously been listed in the Swedish Population Register&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;You may also have the right to vote in the municipal and regional elections without Swedish citizenship:&lt;/em&gt;&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Is Kompass for you?</title>
-				<link>https://kompass26.se/en/test/</link>
+				<link>http://localhost:1313/en/test/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://kompass26.se/en/test/</guid>
+				<guid>http://localhost:1313/en/test/</guid>
 				<description>&lt;p&gt;This is not a scientific survey or a recommendation on how you should vote. It is a simple way to compare your starting points with those of Kompass.&lt;/p&gt;&#xA;&lt;p&gt;Your answers remain in your browser and are not sent to Kompass.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Starting points</title>
-				<link>https://kompass26.se/en/starting/</link>
+				<link>http://localhost:1313/en/starting/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://kompass26.se/en/starting/</guid>
+				<guid>http://localhost:1313/en/starting/</guid>
 				<description>&lt;p&gt;&lt;strong&gt;Kompass believes that Sweden is built every day by those of us who live and work here. The building blocks are dreams and work. We build together.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;growth-work-and-taxation&#34;&gt;Growth, work and taxation&lt;/h2&gt;&#xA;&lt;p&gt;Economic growth matters, but longevity and health matter even more.&lt;/p&gt;&#xA;&lt;p&gt;It should pay to work, but we must share too.&lt;/p&gt;&#xA;&lt;p&gt;It is we who must pay taxes, not someone else.&lt;/p&gt;&#xA;&lt;p&gt;Raising taxes cannot solve every new challenge.&lt;/p&gt;&#xA;&lt;p&gt;Our shared challenges are growing in healthcare, education, infrastructure and security. The room for tax cuts is limited.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Why Kompass?</title>
-				<link>https://kompass26.se/en/why/</link>
+				<link>http://localhost:1313/en/why/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://kompass26.se/en/why/</guid>
+				<guid>http://localhost:1313/en/why/</guid>
 				<description>&lt;p&gt;There are eight parties in the Swedish Riksdag, all represented by experienced and hard-working politicians. Surely everyone should be able to find a party among them that suits them? Probably. But what troubles us is the political conversation itself: the harsh tone and the pessimism, as though we did not belong together and were not already achieving many good things together.&lt;/p&gt;&#xA;&lt;p&gt;That is why we decided to raise our voices, in a friendly and optimistic tone. We also decided to listen carefully, because a good conversation requires us to listen more than we speak, at least when there are more than two people involved. We believe that a constructive and optimistic political conversation is the way forward.&lt;/p&gt;</description>
 			</item>
 	</channel>

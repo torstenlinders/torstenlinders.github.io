@@ -26,9 +26,7 @@ På ditt röstkort framgår vilka val du har rösträtt i.
 
 ## Så röstar du på Kompass
 
-Kompass har anmält deltagande i valen 2026 (riksdag, regioner och kommuner) till Valmyndigheten.
-
-När anmälan har godkänts blir röster på Kompass giltiga i de val som omfattas av anmälan.
+Kompass har anmält deltagande i valen 2026 (riksdag, regioner och kommuner) till Valmyndigheten, som har godkänt anmälan. Det betyder att röster på Kompass giltiga i de val som omfattas av anmälan.
 
 Valsedlar med partinamnet **Kompass** kan komma att finnas på vissa röstmottagningsställen. Om det inte finns någon valsedel för Kompass tar du en **blank valsedel** för det aktuella valet och skriver tydligt partinamnet:
 
