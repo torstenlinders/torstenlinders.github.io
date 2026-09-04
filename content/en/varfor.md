@@ -10,6 +10,7 @@ That is why we decided to raise our voices, in a friendly and optimistic tone. W
 
 Our starting point is neither right nor left, neither impending disaster nor a belief in the good old days.
 
+# {#dreams-work}
 **Our starting point is that Sweden is built through dreams and work, by us who live here.**
 
 <div class="test-invitation">

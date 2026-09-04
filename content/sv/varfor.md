@@ -9,7 +9,8 @@ Därför bestämde vi oss för att höja våra röster, i ett vänligt och optim
 
 Vår utgångspunkt är inte höger eller vänster, inte hotande katastrofer eller att det var bättre förr. 
 
-**Vår utgångspunkt är att Sverige byggs av drömmar och arbete, av oss som bor här.**
+# {#drommar-arbete}
+**Vår utgångspunkt är att Sverige byggs av drömmar och arbete, av oss som bor här.** 
 
 <div class="test-invitation">
   <h2>Är Kompass för dig?</h2>
@@ -20,4 +21,4 @@ Vår utgångspunkt är inte höger eller vänster, inte hotande katastrofer elle
   <a class="button button-primary" href="/test/">
     Gör Kompass-testet
   </a>
-</div>
+</div> 

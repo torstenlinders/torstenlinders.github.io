@@ -75,3 +75,6 @@ other = "Du delar flera av Kompass utgångspunkter, men inte alla."
 
 [test_result_limited]
 other = "Kompass är kanske inte ditt självklara val, men vi hoppas att samtalet ändå kan vara värdefullt."
+
+[fokus_submit]
+other = "Skicka svar"

@@ -11,7 +11,7 @@
 
   <title>
     
-      Varför Kompass? | Kompass
+      Enkät | Kompass
     
   </title>
 
@@ -26,18 +26,13 @@
       integrity="sha256-p7OGgF&#43;a0X9hEathW8vVFKMf6OUHmNCuJ9EYVJ61vh4=">
   
 
-  <link rel="canonical" href="http://localhost:1313/varfor/">
+  <link rel="canonical" href="http://localhost:1313/survey-sep26/">
 
   
     <link
       rel="alternate"
       hreflang="sv"
-      href="http://localhost:1313/varfor/">
-  
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="http://localhost:1313/en/why/">
+      href="http://localhost:1313/survey-sep26/">
   
 
   <link
@@ -93,7 +88,7 @@
       <nav class="language-switcher" aria-label="Språkval">
         
           <a
-            href="/varfor/"
+            href="/survey-sep26/"
             lang="sv"
             hreflang="sv"
             
@@ -101,14 +96,6 @@
               aria-current="page"
             >
             Svenska
-          </a>
-        
-          <a
-            href="/en/why/"
-            lang="en"
-            hreflang="en"
-            >
-            English
           </a>
         
       </nav>
@@ -121,25 +108,44 @@
     
   <article class="content-page">
     <header>
-      <h1>Varför Kompass?</h1>
+      <h1>Enkät</h1>
     </header>
 
     <div class="page-content">
-      <p>Det finns åtta partier i Sveriges riksdag, alla med erfarna och hårt arbetande representater. Bland dessa borde väl alla kunna hitta ett parti som passar dem? Ja, förmodligen. Men det som skaver är själva samtalet, den hårda tonen och pessimismen, som om vi inte hör ihop och idag gör en massa bra saker tillsammans.</p>
-<p>Därför bestämde vi oss för att höja våra röster, i ett vänligt och optimistiskt tonläge. Vi bestämde oss också för att spetsa öronen, för i ett bra samtal måste man lyssna mer än man talar, i alla fall om man är fler än två. Vi tror att det goda och optimistiska samtalet är vägen framåt.</p>
-<p>Vår utgångspunkt är inte höger eller vänster, inte hotande katastrofer eller att det var bättre förr.</p>
-<h1 id="drommar-arbete"></h1>
-<p><strong>Vår utgångspunkt är att Sverige byggs av drömmar och arbete, av oss som bor här.</strong></p>
-<div class="test-invitation">
-  <h2>Är Kompass för dig?</h2>
+      <p>
+  Enkäten är anonym. Vi frågar inte efter namn, e-postadress
+  eller andra kontaktuppgifter och sparar inte din IP-adress
+  tillsammans med svaren.
+</p>
+<form method="POST" action="/api/enkat">
+  <fieldset>
+    <legend>1. Hur väl stämmer följande påstående?</legend>
+<pre><code>&lt;label&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;q1&quot; value=&quot;helt&quot; required&gt;
+  Stämmer helt
+&lt;/label&gt;&lt;br&gt;
+
+&lt;label&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;q1&quot; value=&quot;delvis&quot;&gt;
+  Stämmer delvis
+&lt;/label&gt;&lt;br&gt;
+
+&lt;label&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;q1&quot; value=&quot;inte&quot;&gt;
+  Stämmer inte
+&lt;/label&gt;
+</code></pre>
+  </fieldset>
   <p>
-    Jämför dina utgångspunkter med några av Kompass grundtankar.
-    Testet tar bara någon minut.
+    <label for="q2">2. Vad tycker du är viktigast?</label><br>
+    <textarea id="q2" name="q2" rows="5"></textarea>
   </p>
-  <a class="button button-primary" href="/test/">
-    Gör Kompass-testet
-  </a>
-</div> 
+  <p>
+    <label for="q3">3. Övriga kommentarer</label><br>
+    <textarea id="q3" name="q3" rows="5"></textarea>
+  </p>
+<p><button type="submit">Skicka svar</button></p>
+</form>
     </div>
   </article>
 

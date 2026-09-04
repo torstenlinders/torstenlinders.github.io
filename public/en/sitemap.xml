@@ -52,6 +52,18 @@
                 href="http://localhost:1313/en/contact/"
                 />
   </url><url>
+    <loc>http://localhost:1313/en/focus/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv-SE"
+                href="http://localhost:1313/fokus/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-GB"
+                href="http://localhost:1313/en/focus/"
+                />
+  </url><url>
     <loc>http://localhost:1313/en/involved/</loc>
     <xhtml:link
                 rel="alternate"

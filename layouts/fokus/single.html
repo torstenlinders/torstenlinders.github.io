@@ -1,0 +1,68 @@
+{{ define "main" }}
+<article class="content-page fokus-page">
+  <h1>{{ .Title }}</h1>
+
+  <div class="page-content">
+    {{ .Content }}
+  </div>
+
+  <form id="fokus-form">
+
+    {{ range $index, $question := .Params.questions }}
+
+      <fieldset
+        class="fokus-question"
+        data-type="{{ $question.type }}"
+        data-id="{{ $question.id }}">
+
+        <legend>{{ $question.text }}</legend>
+
+        {{ if eq $question.type "radio" }}
+
+          {{ range $question.options }}
+            <label>
+              <input
+                type="radio"
+                name="{{ $question.id }}"
+                value="{{ . }}"
+                required>
+              {{ . }}
+            </label>
+          {{ end }}
+
+        {{ else if eq $question.type "checkbox" }}
+
+          {{ range $question.options }}
+            <label>
+              <input
+                type="checkbox"
+                name="{{ $question.id }}"
+                value="{{ . }}">
+              {{ . }}
+            </label>
+          {{ end }}
+
+        {{ else if eq $question.type "text" }}
+
+          <textarea
+            name="{{ $question.id }}"
+            rows="5"></textarea>
+
+        {{ end }}
+
+      </fieldset>
+
+    {{ end }}
+
+    <button
+      id="fokus-submit"
+      class="button button-primary"
+      type="submit">
+      {{ i18n "fokus_submit" }}
+    </button>
+
+  </form>
+</article>
+
+<script src="/js/fokus.js"></script>
+{{ end }}

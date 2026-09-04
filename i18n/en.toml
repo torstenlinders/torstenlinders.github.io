@@ -75,3 +75,6 @@ other = "You share several of Kompass's starting points, although not all of the
 
 [test_result_limited]
 other = "Kompass may not be your obvious choice, but we hope the conversation can still be worthwhile."
+
+[fokus_submit]
+other = "Submit response"

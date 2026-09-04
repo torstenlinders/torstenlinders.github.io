@@ -11,7 +11,7 @@
 
   <title>
     
-      Why Kompass? | Kompass
+      Fokus | Kompass
     
   </title>
 
@@ -26,18 +26,18 @@
       integrity="sha256-p7OGgF&#43;a0X9hEathW8vVFKMf6OUHmNCuJ9EYVJ61vh4=">
   
 
-  <link rel="canonical" href="http://localhost:1313/en/why/">
+  <link rel="canonical" href="http://localhost:1313/en/fokus/">
 
   
     <link
       rel="alternate"
       hreflang="sv"
-      href="http://localhost:1313/varfor/">
+      href="http://localhost:1313/fokus/">
   
     <link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/en/why/">
+      href="http://localhost:1313/en/fokus/">
   
 
   <link
@@ -93,7 +93,7 @@
       <nav class="language-switcher" aria-label="Language selection">
         
           <a
-            href="/varfor/"
+            href="/fokus/"
             lang="sv"
             hreflang="sv"
             >
@@ -101,7 +101,7 @@
           </a>
         
           <a
-            href="/en/why/"
+            href="/en/fokus/"
             lang="en"
             hreflang="en"
             
@@ -119,29 +119,131 @@
 
   <main>
     
-  <article class="content-page">
-    <header>
-      <h1>Why Kompass?</h1>
-    </header>
+<article class="content-page fokus-page">
+  <h1>Fokus</h1>
 
-    <div class="page-content">
-      <p>There are eight parties in the Swedish Riksdag, all represented by experienced and hard-working politicians. Surely everyone should be able to find a party among them that suits them? Probably. But what troubles us is the political conversation itself: the harsh tone and the pessimism, as though we did not belong together and were not already achieving many good things together.</p>
-<p>That is why we decided to raise our voices, in a friendly and optimistic tone. We also decided to listen carefully, because a good conversation requires us to listen more than we speak, at least when there are more than two people involved. We believe that a constructive and optimistic political conversation is the way forward.</p>
-<p>Our starting point is neither right nor left, neither impending disaster nor a belief in the good old days.</p>
-<h1 id="dreams-work"></h1>
-<p><strong>Our starting point is that Sweden is built through dreams and work, by us who live here.</strong></p>
-<div class="test-invitation">
-  <h2>Is Kompass for you?</h2>
-  <p>
-    Compare your starting points with some of the basic ideas behind
-    Kompass. The test takes only a minute.
-  </p>
-  <a class="button button-primary" href="/en/test/">
-    Take the Kompass test
-  </a>
-</div>
-    </div>
-  </article>
+  <div class="page-content">
+    <p>Vi vill gärna veta vad du tycker att Kompass ska fokusera på.</p>
+<p>Enkäten är anonym. Vi frågar inte efter namn eller e-postadress.</p>
+
+  </div>
+
+  <form id="fokus-form">
+
+    
+
+      <fieldset
+        class="fokus-question"
+        data-type="radio">
+
+        <legend>Vilken fråga tycker du är viktigast?</legend>
+
+        
+
+          
+            <label>
+              <input
+                type="radio"
+                name="q0"
+                value="Alternativ A"
+                required>
+              Alternativ A
+            </label>
+          
+            <label>
+              <input
+                type="radio"
+                name="q0"
+                value="Alternativ B"
+                required>
+              Alternativ B
+            </label>
+          
+            <label>
+              <input
+                type="radio"
+                name="q0"
+                value="Alternativ C"
+                required>
+              Alternativ C
+            </label>
+          
+
+        
+
+      </fieldset>
+
+    
+
+      <fieldset
+        class="fokus-question"
+        data-type="checkbox">
+
+        <legend>Vilka områden tycker du är viktiga?</legend>
+
+        
+
+          
+            <label>
+              <input
+                type="checkbox"
+                name="q1"
+                value="Område A">
+              Område A
+            </label>
+          
+            <label>
+              <input
+                type="checkbox"
+                name="q1"
+                value="Område B">
+              Område B
+            </label>
+          
+            <label>
+              <input
+                type="checkbox"
+                name="q1"
+                value="Område C">
+              Område C
+            </label>
+          
+
+        
+
+      </fieldset>
+
+    
+
+      <fieldset
+        class="fokus-question"
+        data-type="text">
+
+        <legend>Är det något du vill tillägga?</legend>
+
+        
+
+          <textarea
+            name="q2"
+            rows="5"></textarea>
+
+        
+
+      </fieldset>
+
+    
+
+    <button
+      id="fokus-submit"
+      class="button button-primary"
+      type="submit">
+      Skicka svar
+    </button>
+
+  </form>
+</article>
+
+<script src="/js/fokus.js"></script>
 
   </main>
 
