@@ -5,21 +5,24 @@ layout: "single"
 type: "fokus"
 
 questions:
-  - text: "Vilken fråga tycker du är viktigast?"
+  - id: "viktigast"
+    text: "Vilken fråga tycker du är viktigast?"
     type: "radio"
     options:
       - "Alternativ A"
       - "Alternativ B"
       - "Alternativ C"
 
-  - text: "Vilka områden tycker du är viktiga?"
+  - id: "omraden"
+    text: "Vilka områden tycker du är viktiga?"
     type: "checkbox"
     options:
       - "Område A"
       - "Område B"
       - "Område C"
 
-  - text: "Är det något du vill tillägga?"
+  - id: "kommentar"
+    text: "Är det något du vill tillägga?"
     type: "text"
 ---
 
