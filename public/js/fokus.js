@@ -56,13 +56,15 @@ document.addEventListener("DOMContentLoaded", () => {
         body: JSON.stringify(answers)
       });
 
+      console.log("HTTP status:", response.status);
+
+      const text = await response.text();
+
+      console.log("Server raw response:", text);
+
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}`);
       }
-
-      const result = await response.json();
-
-      console.log("Server response:", result);
 
     } catch (error) {
       console.error("Kunde inte skicka svar:", error);
