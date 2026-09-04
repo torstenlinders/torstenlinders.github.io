@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const answers = {};
@@ -46,5 +46,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     console.log("Fokus answers:", answers);
+
+    try {
+      const response = await fetch("/api/fokus", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(answers)
+      });
+
+      console.log("HTTP status:", response.status);
+
+      const text = await response.text();
+
+      console.log("Server raw response:", text);
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+    } catch (error) {
+      console.error("Kunde inte skicka svar:", error);
+    }
+
   });
 });
