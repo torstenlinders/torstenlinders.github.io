@@ -78,3 +78,6 @@ other = "Kompass är kanske inte ditt självklara val, men vi hoppas att samtale
 
 [fokus_submit]
 other = "Skicka svar"
+
+[fokus_thanks]
+other = "Tack, ditt svar har registrerats."

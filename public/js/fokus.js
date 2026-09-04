@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("#fokus-form");
+  const resultBox = document.querySelector("#fokus-result");
 
   if (!form) {
     return;
@@ -66,9 +67,19 @@ document.addEventListener("DOMContentLoaded", () => {
         throw new Error(`HTTP ${response.status}`);
       }
 
-    } catch (error) {
-      console.error("Kunde inte skicka svar:", error);
-    }
+      form.hidden = true;
+
+      if (resultBox) {
+        resultBox.hidden = false;
+        resultBox.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+
+      } catch (error) {
+        console.error("Kunde inte skicka svar:", error);
+      }
 
   });
 });
