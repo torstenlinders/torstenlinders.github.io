@@ -24,9 +24,9 @@
               <input
                 type="radio"
                 name="{{ $question.id }}"
-                value="{{ . }}"
+                value="{{ .id }}"
                 required>
-              {{ . }}
+              {{ .text }}
             </label>
           {{ end }}
 
@@ -37,8 +37,8 @@
               <input
                 type="checkbox"
                 name="{{ $question.id }}"
-                value="{{ . }}">
-              {{ . }}
+                value="{{ .id }}">
+              {{ .text }}
             </label>
           {{ end }}
 

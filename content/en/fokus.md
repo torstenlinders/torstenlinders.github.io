@@ -6,24 +6,31 @@ type: "fokus"
 
 questions:
   - id: "viktigast"
-    text: "Vilken fråga tycker du är viktigast?"
+    text: "Which issue do you consider most important?"
     type: "radio"
     options:
-      - "Alternativ A"
-      - "Alternativ B"
-      - "Alternativ C"
+      - id: "a"
+        text: "Option A"
+      - id: "b"
+        text: "Option B"
+      - id: "c"
+        text: "Option C"
 
   - id: "omraden"
-    text: "Vilka områden tycker du är viktiga?"
+    text: "Which areas are important to you?"
     type: "checkbox"
     options:
-      - "Område A"
-      - "Område B"
-      - "Område C"
+      - id: "a"
+        text: "Area A"
+      - id: "b"
+        text: "Area B"
+      - id: "c"
+        text: "Area C"
 
   - id: "kommentar"
-    text: "Är det något du vill tillägga?"
+    text: "Is there anything you would like to add?"
     type: "text"
+
 ---
 
 We would like to know what you think Kompass should focus on.
