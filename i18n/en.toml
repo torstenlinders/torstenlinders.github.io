@@ -81,3 +81,6 @@ other = "Submit response"
 
 [fokus_thanks]
 other = "Thank you, your response has been recorded."
+
+[fokus_sending]
+other = "Sending..."

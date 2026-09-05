@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("#fokus-form");
   const resultBox = document.querySelector("#fokus-result");
+  const submitButton = document.querySelector("#fokus-submit");
 
   if (!form) {
     return;
@@ -48,6 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("Fokus answers:", answers);
 
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = window.fokusI18n.sending;
+    }
+
     try {
       const response = await fetch("/api/fokus", {
         method: "POST",
@@ -78,6 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       } catch (error) {
+        if (submitButton) {
+          submitButton.disabled = false;
+        }
         console.error("Kunde inte skicka svar:", error);
       }
 

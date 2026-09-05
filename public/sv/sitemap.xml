@@ -2,19 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-08-02T14:40:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="sv-SE"
-                href="http://localhost:1313/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-GB"
-                href="http://localhost:1313/en/"
-                />
-  </url><url>
     <loc>http://localhost:1313/om/</loc>
     <lastmod>2026-08-02T14:40:00+02:00</lastmod>
     <xhtml:link
@@ -38,6 +25,18 @@
                 rel="alternate"
                 hreflang="en-GB"
                 href="http://localhost:1313/en/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv-SE"
+                href="http://localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-GB"
+                href="http://localhost:1313/en/"
                 />
   </url><url>
     <loc>http://localhost:1313/engagera/</loc>
