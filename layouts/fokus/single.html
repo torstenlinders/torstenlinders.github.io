@@ -54,6 +54,12 @@
 
     {{ end }}
 
+    <div
+        class="cf-turnstile"
+        data-sitekey="DIN_SITE_KEY"
+        data-appearance="interaction-only">
+    </div>
+
     <button
       id="fokus-submit"
       class="button button-primary"
@@ -73,6 +79,12 @@
   window.fokusI18n = {
     sending: '{{ i18n "fokus_sending" }}'
   };
+</script>
+
+<script
+  src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+  async
+  defer>
 </script>
 
 <script src="/js/fokus.js"></script>
