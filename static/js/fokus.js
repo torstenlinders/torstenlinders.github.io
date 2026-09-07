@@ -54,13 +54,19 @@ document.addEventListener("DOMContentLoaded", () => {
       submitButton.textContent = window.fokusI18n.sending;
     }
 
+    const turnstileToken =
+      form.querySelector('input[name="cf-turnstile-response"]')?.value || "";
+
     try {
       const response = await fetch("/api/fokus", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify(answers)
+        body: JSON.stringify({
+          ...answers,
+          turnstileToken
+        })
       });
 
       console.log("HTTP status:", response.status);
