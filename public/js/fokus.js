@@ -56,6 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const turnstileToken =
       form.querySelector('input[name="cf-turnstile-response"]')?.value || "";
+      
+    console.log("Turnstile token:", turnstileToken);
 
     try {
       const response = await fetch("/api/fokus", {
