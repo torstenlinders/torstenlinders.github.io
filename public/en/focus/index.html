@@ -238,7 +238,9 @@
 
     <div
         class="cf-turnstile"
-        data-sitekey="DIN_SITE_KEY">
+        data-sitekey="DIN_SITE_KEY"
+        data-callback="fokusTurnstileSuccess"
+        data-error-callback="fokusTurnstileError">
     </div>
 
     <button
@@ -266,6 +268,16 @@
   src="https://challenges.cloudflare.com/turnstile/v0/api.js"
   async
   defer>
+</script>
+
+<script>
+  function fokusTurnstileSuccess(token) {
+    console.log("Turnstile success:", token);
+  }
+
+  function fokusTurnstileError(errorCode) {
+    console.error("Turnstile error:", errorCode);
+  }
 </script>
 
 <script src="/js/fokus.js"></script>
