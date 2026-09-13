@@ -14,4 +14,5 @@ Here you can:
 
 - explore our political [starting points](/politik.md)
 - learn how to [vote for Kompass](/rosta.md)
+- answer 5 quick questions about [your political focus](fokus.md)
 - find out how to [get involved](/engagera.md)

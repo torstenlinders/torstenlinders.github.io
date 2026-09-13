@@ -1,5 +1,5 @@
 ---
-title: "Fokus på vad?"
+title: "Vad är ditt fokus?"
 slug: "fokus"
 layout: "single"
 type: "fokus"
@@ -52,7 +52,7 @@ questions:
       - id: "d"
         text: "Sveriges utmaningar kräver kompromisser." 
 
-  - id: "pastaende"
+  - id: "sjalvbild"
     text: "4. Vilket påstående stämmer bäst in på dig?"
     type: "radio"
     options:

@@ -10,8 +10,6 @@
 		
 		
 		
-			<lastBuildDate>Sun, 02 Aug 2026 14:40:00 +0200</lastBuildDate>
-		
 			<atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Om</title>
@@ -26,13 +24,6 @@
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/en/contact/</guid>
 				<description>&lt;p&gt;Do you have questions, comments, or would you like to get in touch with Kompass?&lt;/p&gt;&#xA;&lt;h2 id=&#34;email&#34;&gt;Email&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;mailto:kontakt@kompass26.se&#34;&gt;kontakt@kompass26.se&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;press-and-media&#34;&gt;Press and media&lt;/h2&gt;&#xA;&lt;p&gt;Journalists and other media representatives are welcome to contact us by email. Please include &lt;strong&gt;Press&lt;/strong&gt; in the subject line.&lt;/p&gt;&#xA;&lt;h2 id=&#34;website-contact&#34;&gt;Website contact&lt;/h2&gt;&#xA;&lt;p&gt;Torsten Linders&lt;br&gt;&#xA;Founder of Kompass&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Focus on what?</title>
-				<link>http://localhost:1313/en/focus/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/en/focus/</guid>
-				<description>&lt;p&gt;Kompass wants to know how you see Sweden and Swedish politics. Here are &lt;strong&gt;5 quick questions&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The survey is anonymous. We do not ask for your name or email address.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Get involved</title>
@@ -61,6 +52,13 @@
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/en/starting/</guid>
 				<description>&lt;p&gt;&lt;strong&gt;Kompass believes that Sweden is built every day by those of us who live and work here. The building blocks are dreams and work. We build together.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;growth-work-and-taxation&#34;&gt;Growth, work and taxation&lt;/h2&gt;&#xA;&lt;p&gt;Economic growth matters, but longevity and health matter even more.&lt;/p&gt;&#xA;&lt;p&gt;It should pay to work, but we must share too.&lt;/p&gt;&#xA;&lt;p&gt;It is we who must pay taxes, not someone else.&lt;/p&gt;&#xA;&lt;p&gt;Raising taxes cannot solve every new challenge.&lt;/p&gt;&#xA;&lt;p&gt;Our shared challenges are growing in healthcare, education, infrastructure and security. The room for tax cuts is limited.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is your focus?</title>
+				<link>http://localhost:1313/en/focus/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/en/focus/</guid>
+				<description>&lt;p&gt;Kompass wants to know how you see Sweden and Swedish politics. Here are &lt;strong&gt;5 quick questions&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The survey is anonymous. We do not ask for your name or email address.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Why Kompass?</title>

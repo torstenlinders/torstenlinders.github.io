@@ -84,3 +84,6 @@ other = "Tack, ditt svar har registrerats."
 
 [fokus_sending]
 other = "Skickar..."
+
+[your_focus]
+other = "Vad är ditt fokus?"
