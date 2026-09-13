@@ -1,37 +1,76 @@
 ---
-title: "Fokus"
+title: "Fokus på vad?"
 slug: "fokus"
 layout: "single"
 type: "fokus"
 
 questions:
   - id: "viktigast"
-    text: "Vilken fråga tycker du är viktigast?"
+    text: "1. Var vill du framför allt att din röst ska höras?"
     type: "radio"
     options:
       - id: "a"
-        text: "Alternativ A"
+        text: "Europaparlamentet"
       - id: "b"
-        text: "Alternativ B"
+        text: "Riksdagen"
       - id: "c"
-        text: "Alternativ C"
+        text: "Regionfullmäktige"
+      - id: "d"
+        text: "Kommunfullmäktige"
 
   - id: "omraden"
-    text: "Vilka områden tycker du är viktiga?"
+    text: "2. Vilka områden tycker du är viktigast?"
     type: "checkbox"
     options:
       - id: "a"
-        text: "Område A"
+        text: "Ekonomi och jobb"
       - id: "b"
-        text: "Område B"
+        text: "Försvar och beredskap"
       - id: "c"
-        text: "Område C"
+        text: "Migration och integration"
+      - id: "d"
+        text: "Miljö och klimat"
+      - id: "e"
+        text: "Kriminalitet"
+      - id: "f"
+        text: "Sjukvård och omsorg"
+      - id: "g"
+        text: "Skola och utbildning"
+      - id: "h"
+        text: "Infrastruktur: bostäder, energi, transporter, kommunikation"
+
+  - id: "pastaende"
+    text: "3. Vilka av dessa påståenden om Sverige håller du med om?"
+    type: "checkbox"
+    options:
+      - id: "a"
+        text: "Sverige är ett bra land att leva i."
+      - id: "b"
+        text: "Sverige mår bra av invandring."
+      - id: "c"
+        text: "Ukrainas kamp är viktig för Sveriges säkerhet." 
+      - id: "d"
+        text: "Sveriges utmaningar kräver kompromisser." 
+
+  - id: "pastaende"
+    text: "4. Vilket påstående stämmer bäst in på dig?"
+    type: "radio"
+    options:
+      - id: "a"
+        text: "Jag är orolig för framtiden."
+      - id: "b"
+        text: "Jag bygger framtiden." 
+      - id: "c"
+        text: "Jag blir arg när jag ser fel och orättvisor."
+      - id: "d"
+        text: "Jag har idéer om vad som kan göras." 
+
 
   - id: "kommentar"
-    text: "Är det något du vill tillägga?"
+    text: "5. Vad är viktigt för Sverige de närmaste 10 åren?"
     type: "text"
 ---
 
-Vi vill gärna veta vad du tycker att Kompass ska fokusera på.
+Kompass vill veta hur du ser på Sverige och svensk politik. Här kommer **5 snabba frågor**. 
 
 Enkäten är anonym. Vi frågar inte efter namn eller e-postadress.

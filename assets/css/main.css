@@ -393,6 +393,31 @@ a:focus {
   line-height: 1.6;
 }
 
+.fokus-question {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+.fokus-question legend {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.fokus-option {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.fokus-textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 10rem;
+  resize: vertical;
+}
+
 .site-footer {
     display: grid;
     grid-template-columns: 65% 35%;

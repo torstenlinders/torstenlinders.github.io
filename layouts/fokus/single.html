@@ -20,7 +20,7 @@
         {{ if eq $question.type "radio" }}
 
           {{ range $question.options }}
-            <label>
+            <label class="fokus-option">
               <input
                 type="radio"
                 name="{{ $question.id }}"
@@ -33,7 +33,7 @@
         {{ else if eq $question.type "checkbox" }}
 
           {{ range $question.options }}
-            <label>
+            <label class="fokus-option">
               <input
                 type="checkbox"
                 name="{{ $question.id }}"
@@ -45,8 +45,10 @@
         {{ else if eq $question.type "text" }}
 
           <textarea
+            class="fokus-textarea"
             name="{{ $question.id }}"
-            rows="5"></textarea>
+            rows="6"></textarea>
+
 
         {{ end }}
 
