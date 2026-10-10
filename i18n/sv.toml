@@ -87,3 +87,67 @@ other = "Skickar..."
 
 [your_focus]
 other = "Vad är ditt fokus?"
+
+[fokus_q1]
+other = "1. Var vill du framför allt att din röst ska höras?"
+[fokus_q1_a]
+other = "Europaparlamentet"
+[fokus_q1_b]
+other = "Riksdagen"
+[fokus_q1_c]
+other = "Regionfullmäktige"
+[fokus_q1_d]
+other = "Kommunfullmäktige"
+
+[fokus_q2]
+other = "2. Vilka områden tycker du är viktigast?"
+[fokus_q2_a]
+other = "Ekonomi och jobb"
+[fokus_q2_b]
+other = "Försvar och beredskap"
+[fokus_q2_c]
+other = "Migration och integration"
+[fokus_q2_d]
+other = "Miljö och klimat"
+[fokus_q2_e]
+other = "Kriminalitet"
+[fokus_q2_f]
+other = "Sjukvård och omsorg"
+[fokus_q2_g]
+other = "Skola och utbildning"
+[fokus_q2_h]
+other = "Infrastruktur: bostäder, energi, transporter, kommunikation"
+
+[fokus_q3]
+other = "3. Vilka av dessa påståenden om Sverige håller du med om?"
+[fokus_q3_a]
+other = "Sverige är ett bra land att leva i."
+[fokus_q3_b]
+other = "Sverige mår bra av invandring."
+[fokus_q3_c]
+other = "Ukrainas kamp är viktig för Sveriges säkerhet."
+[fokus_q3_d]
+other = "Sveriges utmaningar kräver kompromisser."
+
+[fokus_q4]
+other = "4. Vilket påstående stämmer bäst in på dig?"
+[fokus_q4_a]
+other = "Jag är orolig för framtiden."
+[fokus_q4_b]
+other = "Jag bygger framtiden."
+[fokus_q4_c]
+other = "Jag blir arg när jag ser fel och orättvisor."
+[fokus_q4_d]
+other = "Jag har idéer om vad som kan göras."
+
+[fokus_results_title]
+other = "Resultat från enkäten"
+[fokus_results_responses]
+other = "Antal svar"
+[fokus_results_respondents]
+other = "svarande"
+[fokus_results_reading]
+other = "Resultaten bygger på inskickade enkätsvar."
+
+[fokus_results_answer]
+other = "svar"

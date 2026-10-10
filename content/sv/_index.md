@@ -1,18 +1,17 @@
 ---
 title: "En optimistisk politik för Sverige"
-description: "Ett optimistiskt parti för valet 2026."
+description: "Ett optimistiskt parti."
 ---
 
 Kompass är en optimistisk röst i svensk politik. 
 
 På den här webbplatsen presenterar vi våra idéer om Sverige idag och i framtiden, och om hur vi kan få till ett bättre samtal i svensk politik. 
-Kompass startades i augusti (!) 2026 av oceanografen, hemvärnssoldaten och trebarnspappan Torsten Linders. 
+Kompass startades i augusti 2026 av oceanografen, hemvärnssoldaten och trebarnspappan Torsten Linders. 
 
 ## Läs mer och delta
 
 Här kan du:
 
 - ta del av vår politiska [utgångspunkter](/politik.md)
-- läsa hur du kan [rösta på Kompass](/rosta.md)
 - svara på 5 snabba frågor om [ditt politiska fokus](fokus.md)
 - få information om hur du kan [engagera dig](/engagera.md)

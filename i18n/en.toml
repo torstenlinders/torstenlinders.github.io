@@ -87,3 +87,67 @@ other = "Sending..."
 
 [your_focus]
 other = "What is your focus?"
+
+[fokus_q1]
+other = "1. Where do you most want your voice to be heard?"
+[fokus_q1_a]
+other = "The European Parliament"
+[fokus_q1_b]
+other = "The Swedish Parliament"
+[fokus_q1_c]
+other = "The Regional Council"
+[fokus_q1_d]
+other = "The Municipal Council"
+
+[fokus_q2]
+other = "2. Which issues do you consider most important?"
+[fokus_q2_a]
+other = "Economy and jobs"
+[fokus_q2_b]
+other = "Defence and preparedness"
+[fokus_q2_c]
+other = "Migration and integration"
+[fokus_q2_d]
+other = "Environment and climate"
+[fokus_q2_e]
+other = "Crime"
+[fokus_q2_f]
+other = "Healthcare and social care"
+[fokus_q2_g]
+other = "Schools and education"
+[fokus_q2_h]
+other = "Infrastructure: housing, energy, transport and communications"
+
+[fokus_q3]
+other = "3. Which of these statements about Sweden do you agree with?"
+[fokus_q3_a]
+other = "Sweden is a good country to live in."
+[fokus_q3_b]
+other = "Immigration is good for Sweden."
+[fokus_q3_c]
+other = "Ukraine's struggle is important for Sweden's security."
+[fokus_q3_d]
+other = "Sweden's challenges require compromise."
+
+[fokus_q4]
+other = "4. Which statement best describes you?"
+[fokus_q4_a]
+other = "I am worried about the future."
+[fokus_q4_b]
+other = "I am building the future."
+[fokus_q4_c]
+other = "I get angry when I see things that are wrong or unjust."
+[fokus_q4_d]
+other = "I have ideas about what can be done."
+
+[fokus_results_title]
+other = "Survey results"
+[fokus_results_responses]
+other = "Responses"
+[fokus_results_respondents]
+other = "respondents"
+[fokus_results_reading]
+other = "The results are based on submitted survey responses."
+
+[fokus_results_answer]
+other = "answers"

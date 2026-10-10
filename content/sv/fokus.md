@@ -6,7 +6,7 @@ type: "fokus"
 
 questions:
   - id: "viktigast"
-    text: "1. Var vill du framför allt att din röst ska höras?"
+    i18n: "fokus_q1"
     type: "radio"
     options:
       - id: "a"

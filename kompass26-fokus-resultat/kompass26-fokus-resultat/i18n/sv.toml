@@ -1,0 +1,152 @@
+[read_more]
+other = "Läs mer"
+
+[optimistic_conversation]
+other = "För ett optimistiskt samtal."
+
+[listen-more]
+other = "Vi lyssnar mer än vi talar."
+
+[main_menu]
+other = "Huvudmeny"
+
+[language_selection]
+other = "Språkval"
+
+[menu_open]
+other = "Meny"
+
+[why_kompass]
+other = "Varför Kompass?"
+
+[read_politics]
+other = "Utgångspunkter"
+
+[how_to_vote]
+other = "Så röstar du"
+
+[get_involved]
+other = "Engagera dig"
+
+[take_test]
+other = "Är Kompass för dig?"
+
+[test_strongly_agree]
+other = "Instämmer helt"
+
+[test_agree]
+other = "Instämmer delvis"
+
+[test_neutral]
+other = "Varken eller"
+
+[test_disagree]
+other = "Instämmer inte särskilt"
+
+[test_strongly_disagree]
+other = "Instämmer inte alls"
+
+[test_question]
+other = "Påstående"
+
+[test_progress_of]
+other = "av"
+
+[test_back]
+other = "Föregående"
+
+[test_next]
+other = "Nästa"
+
+[test_show_result]
+other = "Visa resultat"
+
+[test_finished]
+other = "Kompass-testet klart"
+
+[test_result_heading]
+other = "Det verkar som att:"
+
+[test_result_strong]
+other = "Du delar många av Kompass utgångspunkter. Du kanske vill rösta på Kompass? Du kanske vill engagera dig?"
+
+[test_result_some]
+other = "Du delar flera av Kompass utgångspunkter, men inte alla."
+
+[test_result_limited]
+other = "Kompass är kanske inte ditt självklara val, men vi hoppas att samtalet ändå kan vara värdefullt."
+
+[fokus_submit]
+other = "Skicka svar"
+
+[fokus_thanks]
+other = "Tack, ditt svar har registrerats."
+
+[fokus_sending]
+other = "Skickar..."
+
+[your_focus]
+other = "Vad är ditt fokus?"
+[fokus_q1]
+other = "1. Var vill du framför allt att din röst ska höras?"
+[fokus_q1_a]
+other = "Europaparlamentet"
+[fokus_q1_b]
+other = "Riksdagen"
+[fokus_q1_c]
+other = "Regionfullmäktige"
+[fokus_q1_d]
+other = "Kommunfullmäktige"
+
+[fokus_q2]
+other = "2. Vilka områden tycker du är viktigast?"
+[fokus_q2_a]
+other = "Ekonomi och jobb"
+[fokus_q2_b]
+other = "Försvar och beredskap"
+[fokus_q2_c]
+other = "Migration och integration"
+[fokus_q2_d]
+other = "Miljö och klimat"
+[fokus_q2_e]
+other = "Kriminalitet"
+[fokus_q2_f]
+other = "Sjukvård och omsorg"
+[fokus_q2_g]
+other = "Skola och utbildning"
+[fokus_q2_h]
+other = "Infrastruktur: bostäder, energi, transporter, kommunikation"
+
+[fokus_q3]
+other = "3. Vilka av dessa påståenden om Sverige håller du med om?"
+[fokus_q3_a]
+other = "Sverige är ett bra land att leva i."
+[fokus_q3_b]
+other = "Sverige mår bra av invandring."
+[fokus_q3_c]
+other = "Ukrainas kamp är viktig för Sveriges säkerhet."
+[fokus_q3_d]
+other = "Sveriges utmaningar kräver kompromisser."
+
+[fokus_q4]
+other = "4. Vilket påstående stämmer bäst in på dig?"
+[fokus_q4_a]
+other = "Jag är orolig för framtiden."
+[fokus_q4_b]
+other = "Jag bygger framtiden."
+[fokus_q4_c]
+other = "Jag blir arg när jag ser fel och orättvisor."
+[fokus_q4_d]
+other = "Jag har idéer om vad som kan göras."
+
+[fokus_results_title]
+other = "Resultat från enkäten"
+[fokus_results_responses]
+other = "Antal svar"
+[fokus_results_respondents]
+other = "svarande"
+[fokus_results_reading]
+other = "Resultaten bygger på inskickade enkätsvar."
+
+[fokus_results_answer]
+other = "svar"

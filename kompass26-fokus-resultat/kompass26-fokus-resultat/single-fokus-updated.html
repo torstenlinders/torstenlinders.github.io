@@ -1,0 +1,58 @@
+{{ define "main" }}
+<article class="content-page fokus-page">
+  <h1>{{ .Title }}</h1>
+
+  <div class="page-content">
+    {{ .Content }}
+  </div>
+
+  <form id="fokus-form">
+    {{ range $index, $question := .Params.questions }}
+      <fieldset class="fokus-question" data-type="{{ $question.type }}" data-id="{{ $question.id }}">
+        <legend>{{ i18n $question.i18n }}</legend>
+
+        {{ if eq $question.type "radio" }}
+          {{ range $question.options }}
+            <label class="fokus-option">
+              <input type="radio" name="{{ $question.id }}" value="{{ .id }}" required>
+              {{ i18n .i18n }}
+            </label>
+          {{ end }}
+        {{ else if eq $question.type "checkbox" }}
+          {{ range $question.options }}
+            <label class="fokus-option">
+              <input type="checkbox" name="{{ $question.id }}" value="{{ .id }}">
+              {{ i18n .i18n }}
+            </label>
+          {{ end }}
+        {{ else if eq $question.type "text" }}
+          <textarea class="fokus-textarea" name="{{ $question.id }}" rows="6"></textarea>
+        {{ end }}
+      </fieldset>
+    {{ end }}
+
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAEpcuwSWUK8lXDRZ" data-callback="fokusTurnstileSuccess" data-error-callback="fokusTurnstileError"></div>
+
+    <button id="fokus-submit" class="button button-primary" type="submit">
+      {{ i18n "fokus_submit" }}
+    </button>
+  </form>
+
+  <section id="fokus-result" hidden>
+    <p>{{ i18n "fokus_thanks" }}</p>
+  </section>
+</article>
+
+<script>
+  window.fokusI18n = {
+    sending: '{{ i18n "fokus_sending" }}'
+  };
+</script>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script>
+  function fokusTurnstileSuccess(token) { console.log("Turnstile success:", token); }
+  function fokusTurnstileError(errorCode) { console.error("Turnstile error:", errorCode); }
+</script>
+<script src="/js/fokus.js"></script>
+{{ end }}
