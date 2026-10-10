@@ -66,7 +66,7 @@ questions:
         i18n: "fokus_q4_d"
 
   - id: "kommentar"
-    text: "5. Vad är viktigt för Sverige de närmaste 10 åren?"
+    i18n: "fokus_q5"
     type: "text"
 ---
 
