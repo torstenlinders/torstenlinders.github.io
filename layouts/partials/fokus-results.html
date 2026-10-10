@@ -1,0 +1,16 @@
+<section class="fokus-results" aria-labelledby="fokus-results-title">
+  <h1 id="fokus-results-title">{{ i18n "fokus_results_title" }}</h1>
+  <p class="fokus-results-meta">
+    <strong>{{ .Site.Data.fokus_results.response_count }}</strong>
+    {{ i18n "fokus_results_respondents" }}
+  </p>
+  <p>{{ i18n "fokus_results_reading" }}</p>
+
+  {{ range $n := slice "1" "2" "3" "4" }}
+    <figure class="fokus-chart">
+      <img
+        src="/fokus-results/{{ $.Site.Language.Lang }}/q{{ $n }}.svg"
+        alt="{{ i18n (printf "fokus_q%s" $n) }}">
+    </figure>
+  {{ end }}
+</section>

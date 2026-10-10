@@ -418,6 +418,37 @@ a:focus {
   resize: vertical;
 }
 
+.fokus-results {
+  width: min(calc(100% - 2rem), 920px);
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+.fokus-results h1 {
+  color: var(--kompass-blue);
+}
+
+.fokus-results-meta {
+  margin-bottom: 0.25rem;
+}
+
+.fokus-results-meta strong {
+  color: var(--kompass-red);
+  font-size: 1.5rem;
+}
+
+.fokus-chart {
+  margin: 2.5rem 0;
+  padding: 1rem;
+  background: white;
+}
+
+.fokus-chart img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .site-footer {
     display: grid;
     grid-template-columns: 65% 35%;
