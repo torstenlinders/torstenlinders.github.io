@@ -15,7 +15,7 @@
         data-type="{{ $question.type }}"
         data-id="{{ $question.id }}">
 
-        <legend>{{ $question.text }}</legend>
+        <legend>{{ i18n $question.i18n }}</legend>
 
         {{ if eq $question.type "radio" }}
 
