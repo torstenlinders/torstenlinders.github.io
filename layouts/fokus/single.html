@@ -26,7 +26,7 @@
                 name="{{ $question.id }}"
                 value="{{ .id }}"
                 required>
-              {{ .text }}
+              {{ i18n .i18n }}
             </label>
           {{ end }}
 
@@ -38,7 +38,7 @@
                 type="checkbox"
                 name="{{ $question.id }}"
                 value="{{ .id }}">
-              {{ .text }}
+              {{ i18n .i18n }}
             </label>
           {{ end }}
 
