@@ -1,6 +1,6 @@
 ---
 title: "Survey results"
-slug: "results"
+slug: "focus-results"
 layout: "single"
 type: "fokus-results"
 ---
