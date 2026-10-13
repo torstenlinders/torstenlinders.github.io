@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T17:57:53.458330+00:00",
+  "updated_at": "2026-10-13T12:52:06.347226+00:00",
   "responses": [
     {
       "id": 16,
@@ -119,6 +119,24 @@
       ],
       "sjalvbild": "b",
       "kommentar": "Viktigast är att få bort Tidö-politiken"
+    },
+    {
+      "id": 23,
+      "submitted_at": "2026-10-13T12:51:01.361Z",
+      "viktigast": "d",
+      "omraden": [
+        "b",
+        "c",
+        "h"
+      ],
+      "pastaende": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "sjalvbild": "b",
+      "kommentar": "Att Sverige vänder sig utåt, att vi ökar samarbetet med våra grannar, vänner och allierade."
     }
   ]
 }
