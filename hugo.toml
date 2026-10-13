@@ -30,11 +30,6 @@ defaultContentLanguageInSubdir = false
         weight = 20
 
       [[languages.sv.menus.main]]
-        name = 'Rösta'
-        pageRef = '/rosta'
-        weight = 30
-
-      [[languages.sv.menus.main]]
         name = 'Engagera dig'
         pageRef = '/engagera'
         weight = 40
@@ -62,11 +57,6 @@ defaultContentLanguageInSubdir = false
         name = "Starting points"
         pageRef = '/politik'
         weight = 20
-
-      [[languages.en.menus.main]]
-        name = 'How to vote'
-        pageRef = '/rosta'
-        weight = 30
 
       [[languages.en.menus.main]]
         name = 'Get involved'
