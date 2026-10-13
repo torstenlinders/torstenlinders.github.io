@@ -84,6 +84,18 @@ def main():
         print(f"FEL: CSV-filen finns inte: {source}")
         sys.exit(1)
 
+    old_data = None
+
+    if destination.exists():
+        try:
+            with destination.open(
+                "r",
+                encoding="utf-8"
+            ) as f:
+                old_data = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            old_data = None
+
     try:
         with source.open(
             "r",
@@ -178,6 +190,37 @@ def main():
 
         temp_file = destination.with_suffix(".tmp")
 
+        old_responses = []
+
+        if isinstance(old_data, dict):
+            old_responses = old_data.get("responses", [])
+
+        # Jämför hela svarsunderlaget.
+        data_changed = old_responses != responses
+
+        old_ids = {
+            item.get("id")
+            for item in old_responses
+            if isinstance(item, dict)
+        }
+
+        new_ids = {
+            item.get("id")
+            for item in responses
+            if isinstance(item, dict)
+        }
+
+        added_ids = new_ids - old_ids
+        removed_ids = old_ids - new_ids
+
+        if not data_changed and old_data:
+            print(
+                f"OK: {len(responses)} svar validerades."
+            )
+            print("Nya svar: 0")
+            print("Resultatdata ar oforandrad.")
+            return
+
         output = {
             "updated_at": datetime.now(timezone.utc).isoformat(),
             "responses": responses,
@@ -205,6 +248,14 @@ def main():
         print(
             f"Skrev: {destination}"
         )
+        print(
+            f"Nya svar: {len(added_ids)}"
+        )
+
+        if removed_ids:
+            print(
+                f"Borttagna svar: {len(removed_ids)}"
+            )
 
     except (
         csv.Error,
