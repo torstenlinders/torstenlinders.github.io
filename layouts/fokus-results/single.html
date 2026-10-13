@@ -1,5 +1,347 @@
 {{ define "main" }}
+
 <article class="content-page fokus-results-page">
-  {{ partial "fokus-results.html" . }}
+
+  {{ $data := hugo.Data.fokus_svar }}
+  {{ $responses := $data.responses }}
+  {{ $total := len $responses }}
+  {{ $updated := time.AsTime $data.updated_at }}
+
+  <h1>{{ .Title }}</h1>
+
+  <div class="fokus-results-meta">
+    <p>
+      {{ i18n "fokus_results_updated" }}
+      <strong>{{ $updated | time.Format ":date_long" }}</strong>.
+    </p>
+
+    <p>
+      {{ i18n "fokus_results_update_note" }}
+    </p>
+  </div>
+
+  <p>
+    {{ i18n "fokus_results_responses" }}:
+    <strong>{{ $total }}</strong>
+  </p>
+
+  <!-- Fråga 1 -->
+  <section class="fokus-result-question">
+
+    <h2>{{ i18n "fokus_q1" }}</h2>
+
+    {{ $counts := dict "a" 0 "b" 0 "c" 0 "d" 0 }}
+
+    {{ range $responses }}
+      {{ $answer := .viktigast }}
+
+      {{ if isset $counts $answer }}
+        {{ $counts = merge $counts (dict $answer (add (index $counts $answer) 1)) }}
+      {{ end }}
+    {{ end }}
+
+    <div class="fokus-chart">
+
+      {{ $q1items := slice
+        (dict "id" "a" "color" "kompass-blue")
+        (dict "id" "b" "color" "kompass-red")
+        (dict "id" "c" "color" "kompass-blue")
+        (dict "id" "d" "color" "kompass-red")
+      }}
+
+      {{ range $q1items }}
+
+        {{ $id := .id }}
+        {{ $count := index $counts $id }}
+
+        {{ $percent := 0.0 }}
+        {{ if gt $total 0 }}
+          {{ $percent = mul (div (float $count) (float $total)) 100 }}
+        {{ end }}
+
+        <div class="fokus-chart-row">
+
+          <div class="fokus-chart-label">
+            {{ i18n (printf "fokus_q1_%s" $id) }}
+          </div>
+
+          <div class="fokus-chart-bar-line">
+
+            <div
+              class="fokus-chart-track"
+              role="img"
+              aria-label="{{ i18n (printf "fokus_q1_%s" $id) }}: {{ $count }}">
+
+              <div
+                class="fokus-chart-bar {{ .color }}"
+                style="width: {{ $percent }}%;">
+              </div>
+
+            </div>
+
+            <div class="fokus-chart-value">
+              <strong>{{ $count }}</strong>
+              ({{ printf "%.0f" $percent }} %)
+            </div>
+
+          </div>
+
+        </div>
+
+      {{ end }}
+
+    </div>
+
+  </section>
+
+    <!-- Fråga 2 -->
+  <section class="fokus-result-question">
+
+    <h2>{{ i18n "fokus_q2" }}</h2>
+
+    <p class="fokus-chart-note">
+      {{ i18n "fokus_results_multiple_choices" }}
+    </p>
+
+    {{ $q2 := dict
+      "a" 0
+      "b" 0
+      "c" 0
+      "d" 0
+      "e" 0
+      "f" 0
+      "g" 0
+      "h" 0
+    }}
+
+    {{ range $responses }}
+      {{ range .omraden }}
+        {{ $answer := . }}
+        {{ if isset $q2 $answer }}
+          {{ $q2 = merge $q2
+            (dict $answer (add (index $q2 $answer) 1))
+          }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    <div class="fokus-chart">
+
+      {{ $q2items := slice
+        (dict "id" "a" "color" "kompass-blue")
+        (dict "id" "b" "color" "kompass-red")
+        (dict "id" "c" "color" "kompass-blue")
+        (dict "id" "d" "color" "kompass-red")
+        (dict "id" "e" "color" "kompass-blue")
+        (dict "id" "f" "color" "kompass-red")
+        (dict "id" "g" "color" "kompass-blue")
+        (dict "id" "h" "color" "kompass-red")
+      }}
+
+      {{ range $q2items }}
+
+        {{ $id := .id }}
+        {{ $count := index $q2 $id }}
+
+        {{ $percent := 0.0 }}
+        {{ if gt $total 0 }}
+          {{ $percent = mul (div (float $count) (float $total)) 100 }}
+        {{ end }}
+
+        <div class="fokus-chart-row">
+
+          <div class="fokus-chart-label">
+            {{ i18n (printf "fokus_q2_%s" $id) }}
+          </div>
+
+          <div class="fokus-chart-bar-line">
+
+            <div
+              class="fokus-chart-track"
+              role="img"
+              aria-label="{{ i18n (printf "fokus_q2_%s" $id) }}: {{ $count }}">
+
+              <div
+                class="fokus-chart-bar {{ .color }}"
+                style="width: {{ $percent }}%;">
+              </div>
+
+            </div>
+
+            <div class="fokus-chart-value">
+              <strong>{{ $count }}</strong>
+              ({{ printf "%.0f" $percent }} %)
+            </div>
+
+          </div>
+
+        </div>
+
+      {{ end }}
+
+    </div>
+
+  </section>
+
+
+  <!-- Fråga 3 -->
+  <section class="fokus-result-question">
+
+    <h2>{{ i18n "fokus_q3" }}</h2>
+
+    <p class="fokus-chart-note">
+      {{ i18n "fokus_results_multiple_choices" }}
+    </p>
+
+    {{ $q3 := dict
+      "a" 0
+      "b" 0
+      "c" 0
+      "d" 0
+    }}
+
+    {{ range $responses }}
+      {{ range .pastaende }}
+        {{ $answer := . }}
+        {{ if isset $q3 $answer }}
+          {{ $q3 = merge $q3
+            (dict $answer (add (index $q3 $answer) 1))
+          }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    <div class="fokus-chart">
+
+      {{ $q3items := slice
+        (dict "id" "a" "color" "kompass-blue")
+        (dict "id" "b" "color" "kompass-red")
+        (dict "id" "c" "color" "kompass-blue")
+        (dict "id" "d" "color" "kompass-red")
+      }}
+
+      {{ range $q3items }}
+
+        {{ $id := .id }}
+        {{ $count := index $q3 $id }}
+
+        {{ $percent := 0.0 }}
+        {{ if gt $total 0 }}
+          {{ $percent = mul (div (float $count) (float $total)) 100 }}
+        {{ end }}
+
+        <div class="fokus-chart-row">
+
+          <div class="fokus-chart-label">
+            {{ i18n (printf "fokus_q3_%s" $id) }}
+          </div>
+
+          <div class="fokus-chart-bar-line">
+
+            <div
+              class="fokus-chart-track"
+              role="img"
+              aria-label="{{ i18n (printf "fokus_q3_%s" $id) }}: {{ $count }}">
+
+              <div
+                class="fokus-chart-bar {{ .color }}"
+                style="width: {{ $percent }}%;">
+              </div>
+
+            </div>
+
+            <div class="fokus-chart-value">
+              <strong>{{ $count }}</strong>
+              ({{ printf "%.0f" $percent }} %)
+            </div>
+
+          </div>
+
+        </div>
+
+      {{ end }}
+
+    </div>
+
+  </section>
+
+
+  <!-- Fråga 4 -->
+  <section class="fokus-result-question">
+
+    <h2>{{ i18n "fokus_q4" }}</h2>
+
+    {{ $q4 := dict
+      "a" 0
+      "b" 0
+      "c" 0
+      "d" 0
+    }}
+
+    {{ range $responses }}
+      {{ $answer := .sjalvbild }}
+
+      {{ if isset $q4 $answer }}
+        {{ $q4 = merge $q4
+          (dict $answer (add (index $q4 $answer) 1))
+        }}
+      {{ end }}
+    {{ end }}
+
+    <div class="fokus-chart">
+
+      {{ $q4items := slice
+        (dict "id" "a" "color" "kompass-blue")
+        (dict "id" "b" "color" "kompass-red")
+        (dict "id" "c" "color" "kompass-blue")
+        (dict "id" "d" "color" "kompass-red")
+      }}
+
+      {{ range $q4items }}
+
+        {{ $id := .id }}
+        {{ $count := index $q4 $id }}
+
+        {{ $percent := 0.0 }}
+        {{ if gt $total 0 }}
+          {{ $percent = mul (div (float $count) (float $total)) 100 }}
+        {{ end }}
+
+        <div class="fokus-chart-row">
+
+          <div class="fokus-chart-label">
+            {{ i18n (printf "fokus_q4_%s" $id) }}
+          </div>
+
+          <div class="fokus-chart-bar-line">
+
+            <div
+              class="fokus-chart-track"
+              role="img"
+              aria-label="{{ i18n (printf "fokus_q4_%s" $id) }}: {{ $count }}">
+
+              <div
+                class="fokus-chart-bar {{ .color }}"
+                style="width: {{ $percent }}%;">
+              </div>
+
+            </div>
+
+            <div class="fokus-chart-value">
+              <strong>{{ $count }}</strong>
+              ({{ printf "%.0f" $percent }} %)
+            </div>
+
+          </div>
+
+        </div>
+
+      {{ end }}
+
+    </div>
+
+  </section>
+
 </article>
+
 {{ end }}

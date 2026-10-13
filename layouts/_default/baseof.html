@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.Language.LanguageCode | default "sv" }}">
+<html lang="{{ site.Language.Locale | default site.Language.Lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +21,9 @@
     <meta name="description" content="{{ . }}">
   {{ end }}
 
+  {{ with .Params.robots }}
+    <meta name="robots" content="{{ . }}">
+  {{ end }}
 
   {{ with resources.Get "css/main.css" }}
     {{ $css := . | minify | fingerprint }}

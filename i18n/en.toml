@@ -144,9 +144,9 @@ other = "I have ideas about what can be done."
 other = "5. What will be important for Sweden over the next 10 years?"
 
 [fokus_results_title]
-other = "Survey results"
+other = "Survey results" 
 [fokus_results_responses]
-other = "Responses"
+other = "Number of responses"
 [fokus_results_respondents]
 other = "respondents"
 [fokus_results_reading]
@@ -154,3 +154,15 @@ other = "The results are based on submitted survey responses."
 
 [fokus_results_answer]
 other = "answers"
+
+[fokus_results_button]
+other = "View result"
+
+[fokus_results_updated]
+other = "Results last updated"
+
+[fokus_results_update_note]
+other = "Responses submitted after this will be included in the next update."
+
+[fokus_results_multiple_choices]
+other = "Multiple options could be selected."

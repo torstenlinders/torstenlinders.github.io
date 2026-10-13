@@ -154,3 +154,15 @@ other = "Resultaten bygger på inskickade enkätsvar."
 
 [fokus_results_answer]
 other = "svar"
+
+[fokus_results_button]
+other = "Visa resultat"
+
+[fokus_results_updated]
+other = "Resultaten uppdaterades senast"
+
+[fokus_results_update_note]
+other = "Svar som skickats in efter detta ingår vid nästa uppdatering."
+
+[fokus_results_multiple_choices]
+other = "Flera svarsalternativ kunde väljas."

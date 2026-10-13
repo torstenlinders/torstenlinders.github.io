@@ -1,6 +1,8 @@
 :root {
   --kompass-blue: #2e3192;
   --kompass-red: #8f0040;
+  --kompass-lightblue: #aeb1f2;
+  --kompass-lightred: #e97ba4;
   --text: #202332;
   --muted: #646878;
   --background: #ffffff;
@@ -449,6 +451,94 @@ a:focus {
   height: auto;
 }
 
+/* Fokus – enkätresultat */
+
+.fokus-result-question {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-top: 5px solid var(--kompass-red);
+}
+
+.fokus-result-question h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--kompass-blue);
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.fokus-chart {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.fokus-chart-row {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.fokus-chart-label {
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.fokus-chart-bar-line {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 5.5rem;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.fokus-chart-track {
+  height: 1.4rem;
+  overflow: hidden;
+  background: var(--soft-background);
+  border-radius: 0.2rem;
+}
+
+.fokus-chart-bar {
+  height: 100%;
+  min-width: 0;
+}
+
+.fokus-chart-bar.kompass-blue {
+  background: var(--kompass-blue);
+}
+
+.fokus-chart-bar.kompass-red {
+  background: var(--kompass-red);
+}
+
+.fokus-chart-bar.kompass-lightblue {
+  background: var(--kompass-lightblue);
+}
+
+.fokus-chart-bar.kompass-lightred {
+  background: var(--kompass-lightred);
+}
+
+.fokus-chart-value {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.fokus-chart-note {
+  margin: -0.75rem 0 1.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-style: italic;}
+
+.fokus-results-meta {
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.fokus-results-meta p {
+  margin: 0.25rem 0;
+}
+
 .site-footer {
     display: grid;
     grid-template-columns: 65% 35%;
@@ -654,13 +744,9 @@ a:focus {
   }
 
   .test-result-actions .button {
-/*    width: 100%;*/
+  /*    width: 100%;*/
     text-align: left;
   }
-
-}
-
-@media (max-width: 900px) {
 
   .main-nav a:hover,
   .main-nav a:focus,
