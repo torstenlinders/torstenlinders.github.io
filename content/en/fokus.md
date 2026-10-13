@@ -73,3 +73,5 @@ questions:
 Kompass wants to know how you see Sweden and Swedish politics. Here are **5 quick questions**.
 
 The survey is anonymous. We do not ask for your name or email address.
+
+After submitting your response, you can view statistics from previous responses to questions 1–4.

@@ -73,3 +73,5 @@ questions:
 Kompass vill veta hur du ser på Sverige och svensk politik. Här kommer **5 snabba frågor**.
 
 Enkäten är anonym. Vi frågar inte efter namn eller e-postadress.
+
+Efter att du svarat kan du fortsätta till en sida som visar statistik över tidigare svar på frågorna 1 - 4. 

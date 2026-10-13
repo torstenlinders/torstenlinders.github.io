@@ -142,6 +142,8 @@ other = "I have ideas about what can be done."
 
 [fokus_q5]
 other = "5. What will be important for Sweden over the next 10 years?"
+[fokus_q5_note]
+other = "Responses to this question are not shown on the results page."
 
 [fokus_results_title]
 other = "Survey results" 

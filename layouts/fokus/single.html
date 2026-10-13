@@ -44,6 +44,10 @@
 
         {{ else if eq $question.type "text" }}
 
+        <p class="fokus-question-note">
+          {{ i18n "fokus_q5_note" }}
+        </p>
+
           <textarea
             class="fokus-textarea"
             name="{{ $question.id }}"

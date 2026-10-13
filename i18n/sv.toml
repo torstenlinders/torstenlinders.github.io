@@ -142,6 +142,8 @@ other = "Jag har idéer om vad som kan göras."
 
 [fokus_q5]
 other = "5. Vad är viktigt för Sverige de närmaste 10 åren?"
+[fokus_q5_note]
+other = "Svaren på denna fråga visas inte på resultatsidan."
 
 [fokus_results_title]
 other = "Resultat från enkäten"
