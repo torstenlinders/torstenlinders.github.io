@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T12:52:06.347226+00:00",
+  "updated_at": "2026-10-16T12:14:25.692988+00:00",
   "responses": [
     {
       "id": 16,
@@ -137,6 +137,40 @@
       ],
       "sjalvbild": "b",
       "kommentar": "Att Sverige vänder sig utåt, att vi ökar samarbetet med våra grannar, vänner och allierade."
+    },
+    {
+      "id": 25,
+      "submitted_at": "2026-10-15T20:12:30.735Z",
+      "viktigast": "a",
+      "omraden": [
+        "d",
+        "f",
+        "g"
+      ],
+      "pastaende": [
+        "a",
+        "b",
+        "c"
+      ],
+      "sjalvbild": "c",
+      "kommentar": "Bryta SDs inflytande"
+    },
+    {
+      "id": 26,
+      "submitted_at": "2026-10-15T20:16:59.421Z",
+      "viktigast": "b",
+      "omraden": [
+        "d",
+        "f",
+        "g"
+      ],
+      "pastaende": [
+        "a",
+        "b",
+        "c"
+      ],
+      "sjalvbild": "c",
+      "kommentar": ""
     }
   ]
 }
