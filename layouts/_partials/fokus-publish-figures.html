@@ -1,18 +1,70 @@
 
 {{- $figures := hugo.Data.figures.figures -}}
+{{- $lang := .Language.Lang -}}
+
+{{- $variants := slice
+  (dict
+    "name" "wide"
+    "width" 900
+    "margin" 45
+    "barWidth" 660
+    "valueX" 725
+    "titleFontSize" 27
+    "labelFontSize" 19
+    "valueFontSize" 18
+    "titleMaxChars" 44
+    "labelMaxChars" 65
+  )
+  (dict
+    "name" "medium"
+    "width" 600
+    "margin" 25
+    "barWidth" 440
+    "valueX" 480
+    "titleFontSize" 23
+    "labelFontSize" 18
+    "valueFontSize" 16
+    "titleMaxChars" 37
+    "labelMaxChars" 47
+  )
+  (dict
+    "name" "narrow"
+    "width" 360
+    "margin" 18
+    "barWidth" 324
+    "valueX" 0
+    "titleFontSize" 20
+    "labelFontSize" 16
+    "valueFontSize" 14
+    "titleMaxChars" 29
+    "labelMaxChars" 26
+    "compact" true
+  )
+-}}
 
 {{- range $figures -}}
-
   {{- $figure := . -}}
 
-  {{- $svg := partial "fokus-chart-svg.html" (dict
-    "figure" $figure
-  ) -}}
+  {{- range $variants -}}
+    {{- $variant := . -}}
 
-  {{- $lang := $.Language.Lang -}}
-  {{- $filename := printf "figurer/%s/%s.svg" $lang $figure.id -}}
+    {{- $svg := partial "fokus-chart-svg.html" (dict
+      "figure" $figure
+      "variant" $variant
+    ) -}}
 
-  {{- $resource := resources.FromString $filename $svg -}}
-  {{- $resource.Publish -}}
+    {{- $filename := printf "figurer/%s/%s.svg" $lang $figure.id -}}
 
+    {{- if ne $variant.name "wide" -}}
+      {{- $filename = printf
+        "figurer/%s/%s-%s.svg"
+        $lang
+        $figure.id
+        $variant.name
+      -}}
+    {{- end -}}
+
+    {{- $resource := resources.FromString $filename $svg -}}
+    {{- $resource.Publish -}}
+  {{- end -}}
 {{- end -}}

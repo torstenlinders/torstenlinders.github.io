@@ -1,6 +1,22 @@
 
 
 {{- $figure := .figure -}}
+{{- $variant := .variant | default dict -}}
+
+{{- $width := $variant.width | default 900 -}}
+{{- $margin := $variant.margin | default 45 -}}
+{{- $barWidthMax := $variant.barWidth | default 660 -}}
+{{- $valueX := $variant.valueX | default 725 -}}
+
+{{- $titleFontSize := $variant.titleFontSize | default 27 -}}
+{{- $labelFontSize := $variant.labelFontSize | default 19 -}}
+{{- $valueFontSize := $variant.valueFontSize | default 18 -}}
+
+{{- $titleMaxChars := $variant.titleMaxChars | default 44 -}}
+{{- $labelMaxChars := $variant.labelMaxChars | default 65 -}}
+
+{{- $compact := $variant.compact | default false -}}
+
 {{- $question := $figure.question -}}
 {{- $questionKey := printf "fokus_q%d" $question -}}
 
@@ -17,7 +33,7 @@
 
 {{- $titleLines := partial "fokus-svg-lines.html" (dict
   "text" $title
-  "maxChars" 44
+  "maxChars" $titleMaxChars
 ) -}}
 
 {{- $titleHeight := mul (len $titleLines) 36 -}}
@@ -40,12 +56,16 @@
 
   {{- $lines := partial "fokus-svg-lines.html" (dict
     "text" $label
-    "maxChars" 65
+    "maxChars" $labelMaxChars
   ) -}}
 
   {{- $optionLines = merge $optionLines (dict $id $lines) -}}
 
   {{- $rowHeight := add 85 (mul (sub (len $lines) 1) 24) -}}
+
+  {{- if $compact -}}
+    {{- $rowHeight = add 78 (mul (sub (len $lines) 1) 24) -}}
+  {{- end -}}
 
   {{- $rowHeights = append $rowHeight $rowHeights -}}
   {{- $totalRowsHeight = add $totalRowsHeight $rowHeight -}}
@@ -55,23 +75,23 @@
 {{- $height := add $footerY 60 -}}
 
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="900"
+     width="{{ $width }}"
      height="{{ $height }}"
-     viewBox="0 0 900 {{ $height }}"
+     viewBox="0 0 {{ $width }} {{ $height }}"
      role="img">
 
   <title>{{ $title }}</title>
 
-  <rect width="900" height="{{ $height }}" fill="#ffffff"/>
+  <rect width="{{ $width }}" height="{{ $height }}" fill="#ffffff"/>
 
-  <text x="45" y="60"
+  <text x="{{ $margin }}" y="60"
         font-family="Arial, sans-serif"
-        font-size="27"
+        font-size="{{ $titleFontSize }}"
         font-weight="bold"
         fill="#2e3192">
     {{ partial "fokus-svg-text.html" (dict
       "lines" $titleLines
-      "x" 45
+      "x" $margin
       "lineHeight" 36
     ) }}
   </text>
@@ -100,49 +120,67 @@
 
     {{- $barY := add $y (add 35 (mul (sub $lineCount 1) 24)) -}}
 
-    {{- $barWidth := mul (div $percent 100) 660 -}}
+    {{- if $compact -}}
+      {{- $barY = add $y (add 25 (mul (sub $lineCount 1) 24)) -}}
+    {{- end -}}
+
+    {{- $barWidth := mul (div $percent 100) $barWidthMax -}}
     {{- $color := index $colors (mod $index 2) -}}
 
-    <text x="45" y="{{ $y }}"
+    <text x="{{ $margin }}" y="{{ $y }}"
           font-family="Arial, sans-serif"
-          font-size="19"
+          font-size="{{ $labelFontSize }}"
           fill="#202332">
       {{ partial "fokus-svg-text.html" (dict
         "lines" $lines
-        "x" 45
+        "x" $margin
         "lineHeight" 24
       ) }}
     </text>
 
-    <rect x="45" y="{{ $barY }}"
-          width="660" height="24"
+    <rect x="{{ $margin }}" y="{{ $barY }}"
+          width="{{ $barWidthMax }}" height="24"
           fill="#f4f4f8"/>
 
-    <rect x="45" y="{{ $barY }}"
+    <rect x="{{ $margin }}" y="{{ $barY }}"
           width="{{ $barWidth }}" height="24"
           fill="{{ $color }}"/>
 
-    <text x="725" y="{{ add $barY 19 }}"
-          font-family="Arial, sans-serif"
-          font-size="18"
-          fill="#202332">
-      {{ $count }} ({{ printf "%.0f" $percent }} %)
-    </text>
+    {{- if $compact }}
+      <text
+        x="{{ sub $width $margin }}"
+        y="{{ $y }}"
+        text-anchor="end"
+        font-family="Arial, sans-serif"
+        font-size="{{ $valueFontSize }}"
+        fill="#202332">
+        {{ $count }} ({{ printf "%.0f" $percent }} %)
+      </text>
+    {{- else }}
+      <text
+        x="{{ $valueX }}"
+        y="{{ add $barY 19 }}"
+        font-family="Arial, sans-serif"
+        font-size="{{ $valueFontSize }}"
+        fill="#202332">
+        {{ $count }} ({{ printf "%.0f" $percent }} %)
+      </text>
+    {{- end }}
 
   {{- end -}}
 
   <line x1="45" y1="{{ $footerY }}"
-        x2="855" y2="{{ $footerY }}"
+        x2="{{ sub $width $margin }}" y2="{{ $footerY }}"
         stroke="#dedee8"/>
 
-  <text x="45" y="{{ add $footerY 30 }}"
+  <text x="{{ $margin }}" y="{{ add $footerY 30 }}"
         font-family="Arial, sans-serif"
         font-size="15"
         fill="#646878">
     Kompass26.se
   </text>
 
-  <text x="855" y="{{ add $footerY 30 }}"
+  <text x="{{ sub $width $margin }}" y="{{ add $footerY 30 }}"
         text-anchor="end"
         font-family="Arial, sans-serif"
         font-size="15"
@@ -152,7 +190,7 @@
 
   {{- if $multiple }}
     <text
-      x="45"
+      x="{{ $margin }}"
       y="{{ add 75 $titleHeight }}"
       font-family="Arial, sans-serif"
       font-size="17"
