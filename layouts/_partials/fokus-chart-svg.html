@@ -1,0 +1,165 @@
+
+
+{{- $figure := .figure -}}
+{{- $question := $figure.question -}}
+{{- $questionKey := printf "fokus_q%d" $question -}}
+
+{{- $stats := partial "fokus-statistics.html" (dict "figure" $figure) -}}
+
+{{- $total := $stats.total -}}
+{{- $options := $stats.options -}}
+{{- $multiple := $stats.multiple -}}
+{{- $counts := $stats.counts -}}
+
+{{- $title := i18n $questionKey -}}
+{{- $colors := slice "#2e3192" "#8f0040" -}}
+
+
+{{- $titleLines := partial "fokus-svg-lines.html" (dict
+  "text" $title
+  "maxChars" 44
+) -}}
+
+{{- $titleHeight := mul (len $titleLines) 36 -}}
+
+{{- $noteHeight := 0 -}}
+{{- if $multiple -}}
+  {{- $noteHeight = 35 -}}
+{{- end -}}
+
+{{- $startY := add (add 100 $titleHeight) $noteHeight -}}
+
+
+{{- $rowHeights := slice -}}
+{{- $optionLines := dict -}}
+{{- $totalRowsHeight := 0 -}}
+
+{{- range $options -}}
+  {{- $id := . -}}
+  {{- $label := i18n (printf "%s_%s" $questionKey $id) -}}
+
+  {{- $lines := partial "fokus-svg-lines.html" (dict
+    "text" $label
+    "maxChars" 65
+  ) -}}
+
+  {{- $optionLines = merge $optionLines (dict $id $lines) -}}
+
+  {{- $rowHeight := add 85 (mul (sub (len $lines) 1) 24) -}}
+
+  {{- $rowHeights = append $rowHeight $rowHeights -}}
+  {{- $totalRowsHeight = add $totalRowsHeight $rowHeight -}}
+{{- end -}}
+
+{{- $footerY := add $startY $totalRowsHeight 30 -}}
+{{- $height := add $footerY 60 -}}
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="900"
+     height="{{ $height }}"
+     viewBox="0 0 900 {{ $height }}"
+     role="img">
+
+  <title>{{ $title }}</title>
+
+  <rect width="900" height="{{ $height }}" fill="#ffffff"/>
+
+  <text x="45" y="60"
+        font-family="Arial, sans-serif"
+        font-size="27"
+        font-weight="bold"
+        fill="#2e3192">
+    {{ partial "fokus-svg-text.html" (dict
+      "lines" $titleLines
+      "x" 45
+      "lineHeight" 36
+    ) }}
+  </text>
+
+  {{- range $index, $id := $options -}}
+
+    {{- $count := index $counts $id -}}
+    {{- $percent := 0.0 -}}
+
+    {{- if gt $total 0 -}}
+      {{- $percent = mul (div (float $count) (float $total)) 100 -}}
+    {{- end -}}
+
+    {{- $offset := 0 -}}
+
+    {{- range $i, $height := $rowHeights -}}
+      {{- if lt $i $index -}}
+        {{- $offset = add $offset $height -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- $y := add $startY $offset -}}
+
+    {{- $lines := index $optionLines $id -}}
+    {{- $lineCount := len $lines -}}
+
+    {{- $barY := add $y (add 35 (mul (sub $lineCount 1) 24)) -}}
+
+    {{- $barWidth := mul (div $percent 100) 660 -}}
+    {{- $color := index $colors (mod $index 2) -}}
+
+    <text x="45" y="{{ $y }}"
+          font-family="Arial, sans-serif"
+          font-size="19"
+          fill="#202332">
+      {{ partial "fokus-svg-text.html" (dict
+        "lines" $lines
+        "x" 45
+        "lineHeight" 24
+      ) }}
+    </text>
+
+    <rect x="45" y="{{ $barY }}"
+          width="660" height="24"
+          fill="#f4f4f8"/>
+
+    <rect x="45" y="{{ $barY }}"
+          width="{{ $barWidth }}" height="24"
+          fill="{{ $color }}"/>
+
+    <text x="725" y="{{ add $barY 19 }}"
+          font-family="Arial, sans-serif"
+          font-size="18"
+          fill="#202332">
+      {{ $count }} ({{ printf "%.0f" $percent }} %)
+    </text>
+
+  {{- end -}}
+
+  <line x1="45" y1="{{ $footerY }}"
+        x2="855" y2="{{ $footerY }}"
+        stroke="#dedee8"/>
+
+  <text x="45" y="{{ add $footerY 30 }}"
+        font-family="Arial, sans-serif"
+        font-size="15"
+        fill="#646878">
+    Kompass26.se
+  </text>
+
+  <text x="855" y="{{ add $footerY 30 }}"
+        text-anchor="end"
+        font-family="Arial, sans-serif"
+        font-size="15"
+        fill="#646878">
+    {{ i18n "fokus_results_responses" }}: {{ $total }}
+  </text>
+
+  {{- if $multiple }}
+    <text
+      x="45"
+      y="{{ add 75 $titleHeight }}"
+      font-family="Arial, sans-serif"
+      font-size="17"
+      font-style="italic"
+      fill="#646878">
+      {{ i18n "fokus_results_multiple_choices" }}
+    </text>
+  {{- end }}
+
+</svg>

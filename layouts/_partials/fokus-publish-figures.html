@@ -1,0 +1,18 @@
+
+{{- $figures := hugo.Data.figures.figures -}}
+
+{{- range $figures -}}
+
+  {{- $figure := . -}}
+
+  {{- $svg := partial "fokus-chart-svg.html" (dict
+    "figure" $figure
+  ) -}}
+
+  {{- $lang := $.Language.Lang -}}
+  {{- $filename := printf "figurer/%s/%s.svg" $lang $figure.id -}}
+
+  {{- $resource := resources.FromString $filename $svg -}}
+  {{- $resource.Publish -}}
+
+{{- end -}}

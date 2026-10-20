@@ -67,3 +67,12 @@ defaultContentLanguageInSubdir = false
         name = 'Contact'
         pageRef = '/kontakt'
         weight = 50
+
+[outputFormats.FokusSVG]
+  mediaType = "image/svg+xml"
+  baseName = "graf-1"
+  isPlainText = true
+  notAlternative = true
+
+[mediaTypes."image/svg+xml"]
+  suffixes = ["svg"]

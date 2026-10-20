@@ -1,0 +1,8 @@
+
+{{- range $index, $line := .lines -}}
+  <tspan
+    x="{{ $.x }}"
+    dy="{{ if eq $index 0 }}0{{ else }}{{ $.lineHeight }}{{ end }}">
+    {{ $line }}
+  </tspan>
+{{- end -}}

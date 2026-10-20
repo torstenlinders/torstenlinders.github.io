@@ -1,0 +1,67 @@
+
+{{- $figure := .figure -}}
+{{- $stats := partial "fokus-statistics.html" (dict "figure" $figure) -}}
+{{- $questionKey := printf "fokus_q%d" $stats.question -}}
+
+<section class="fokus-result-question">
+
+  <h2>{{ i18n $questionKey }}</h2>
+
+  {{- if $stats.multiple }}
+    <p class="fokus-chart-note">
+      {{ i18n "fokus_results_multiple_choices" }}
+    </p>
+  {{- end }}
+
+  <div class="fokus-chart">
+
+    {{- range $index, $id := $stats.options }}
+
+      {{- $count := index $stats.counts $id -}}
+
+      {{- $percent := 0.0 -}}
+      {{- if gt $stats.total 0 -}}
+        {{- $percent = mul (div (float $count) (float $stats.total)) 100 -}}
+      {{- end -}}
+
+      {{- $color := "kompass-blue" -}}
+      {{- if eq (mod $index 2) 1 -}}
+        {{- $color = "kompass-red" -}}
+      {{- end -}}
+
+      {{- $label := i18n (printf "%s_%s" $questionKey $id) -}}
+
+      <div class="fokus-chart-row">
+
+        <div class="fokus-chart-label">
+          {{ $label }}
+        </div>
+
+        <div class="fokus-chart-bar-line">
+
+          <div
+            class="fokus-chart-track"
+            role="img"
+            aria-label="{{ $label }}: {{ $count }}">
+
+            <div
+              class="fokus-chart-bar {{ $color }}"
+              style="width: {{ $percent }}%;">
+            </div>
+
+          </div>
+
+          <div class="fokus-chart-value">
+            <strong>{{ $count }}</strong>
+            ({{ printf "%.0f" $percent }} %)
+          </div>
+
+        </div>
+
+      </div>
+
+    {{- end }}
+
+  </div>
+
+</section>

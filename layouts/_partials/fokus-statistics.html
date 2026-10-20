@@ -1,0 +1,62 @@
+
+{{- $figure := .figure -}}
+{{- $question := $figure.question -}}
+
+{{- $data := hugo.Data.fokus_svar -}}
+{{- $responses := $data.responses -}}
+{{- $total := len $responses -}}
+
+{{- $options := slice "a" "b" "c" "d" -}}
+{{- $field := "" -}}
+{{- $multiple := false -}}
+
+{{- if eq $question 1 -}}
+  {{- $field = "viktigast" -}}
+{{- else if eq $question 2 -}}
+  {{- $field = "omraden" -}}
+  {{- $options = slice "a" "b" "c" "d" "e" "f" "g" "h" -}}
+  {{- $multiple = true -}}
+{{- else if eq $question 3 -}}
+  {{- $field = "pastaende" -}}
+  {{- $multiple = true -}}
+{{- else if eq $question 4 -}}
+  {{- $field = "sjalvbild" -}}
+{{- else -}}
+  {{- errorf "Okand enkätfråga: %d" $question -}}
+{{- end -}}
+
+{{- $counts := dict -}}
+
+{{- range $options -}}
+  {{- $counts = merge $counts (dict . 0) -}}
+{{- end -}}
+
+{{- range $responses -}}
+  {{- $response := . -}}
+
+  {{- if $multiple -}}
+    {{- range index $response $field -}}
+      {{- $id := . -}}
+      {{- if isset $counts $id -}}
+        {{- $counts = merge $counts
+          (dict $id (add (index $counts $id) 1))
+        -}}
+      {{- end -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $id := index $response $field -}}
+    {{- if isset $counts $id -}}
+      {{- $counts = merge $counts
+        (dict $id (add (index $counts $id) 1))
+      -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return (dict
+  "question" $question
+  "total" $total
+  "multiple" $multiple
+  "options" $options
+  "counts" $counts
+) -}}

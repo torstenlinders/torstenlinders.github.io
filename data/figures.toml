@@ -1,0 +1,26 @@
+
+# Kompass26 – register över exporterbara figurer
+
+[[figures]]
+id = "fokus-q1"
+category = "fokus"
+type = "survey-bar"
+question = 1
+
+[[figures]]
+id = "fokus-q2"
+category = "fokus"
+type = "survey-bar"
+question = 2
+
+[[figures]]
+id = "fokus-q3"
+category = "fokus"
+type = "survey-bar"
+question = 3
+
+[[figures]]
+id = "fokus-q4"
+category = "fokus"
+type = "survey-bar"
+question = 4

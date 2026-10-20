@@ -534,7 +534,21 @@ a:focus {
   margin: -0.75rem 0 1.5rem;
   color: var(--muted);
   font-size: 0.95rem;
-  font-style: italic;}
+  font-style: italic;
+}
+
+/* SVG-diagram på resultatsidan */
+
+.fokus-svg-chart {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.fokus-svg-chart img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 .fokus-results-meta {
   margin-bottom: 1.5rem;

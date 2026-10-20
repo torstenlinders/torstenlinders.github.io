@@ -1,0 +1,27 @@
+
+{{- $words := split .text " " -}}
+{{- $maxChars := .maxChars | default 45 -}}
+{{- $lines := slice -}}
+{{- $line := "" -}}
+
+{{- range $words -}}
+  {{- $word := . -}}
+  {{- $candidate := $word -}}
+
+  {{- if ne $line "" -}}
+    {{- $candidate = printf "%s %s" $line $word -}}
+  {{- end -}}
+
+  {{- if and (gt (len $candidate) $maxChars) (ne $line "") -}}
+    {{- $lines = append $line $lines -}}
+    {{- $line = $word -}}
+  {{- else -}}
+    {{- $line = $candidate -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if ne $line "" -}}
+  {{- $lines = append $line $lines -}}
+{{- end -}}
+
+{{- return $lines -}}
