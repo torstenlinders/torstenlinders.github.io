@@ -1,0 +1,41 @@
+
+# Kompass26 – storleksvarianter för SVG-figurer
+
+[[variants]]
+name = "wide"
+width = 900
+margin = 45
+barWidth = 660
+valueX = 725
+titleFontSize = 27
+labelFontSize = 19
+valueFontSize = 18
+titleMaxChars = 44
+labelMaxChars = 65
+compact = false
+
+[[variants]]
+name = "medium"
+width = 600
+margin = 25
+barWidth = 440
+valueX = 480
+titleFontSize = 23
+labelFontSize = 18
+valueFontSize = 16
+titleMaxChars = 37
+labelMaxChars = 47
+compact = false
+
+[[variants]]
+name = "narrow"
+width = 360
+margin = 18
+barWidth = 324
+valueX = 0
+titleFontSize = 20
+labelFontSize = 16
+valueFontSize = 14
+titleMaxChars = 29
+labelMaxChars = 26
+compact = true
