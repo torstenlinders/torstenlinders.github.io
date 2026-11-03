@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T12:14:25.692988+00:00",
+  "updated_at": "2026-11-03T07:01:47.327078+00:00",
   "responses": [
     {
       "id": 16,
@@ -171,6 +171,25 @@
       ],
       "sjalvbild": "c",
       "kommentar": ""
+    },
+    {
+      "id": 27,
+      "submitted_at": "2026-10-21T08:52:03.879Z",
+      "viktigast": "b",
+      "omraden": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "g",
+        "h"
+      ],
+      "pastaende": [
+        "a"
+      ],
+      "sjalvbild": "a",
+      "kommentar": "Ekonomisk växande, kriminalitet sjunker och skatter sänks"
     }
   ]
 }
